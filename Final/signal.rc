@@ -1,0 +1,329 @@
+Magic 271485
+Revision Verdi_P-2019.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 23 1920 1017 163 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d . "" "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/Final/SRAM_2KB.tr0.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 1313000.000000
+cursor 598179.47178871545
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 40
+; marker line index
+markerPos 48
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+activeDirFile "" "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/Final/SRAM_2KB.tr0.fsdb"
+allAtoD "A_AtoD_v(a6)" 0.35 0.35 /v(a6)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "A_AtoD_v(a5)" 0.35 0.35 /v(a5)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "A_AtoD_v(a4)" 0.35 0.35 /v(a4)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "A_AtoD_v(a3)" 0.35 0.35 /v(a3)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "A_AtoD_v(a2)" 0.35 0.35 /v(a2)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "A_AtoD_v(a1)" 0.35 0.35 /v(a1)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "A_AtoD_v(a0)" 0.35 0.35 /v(a0)
+
+; Run Time Signal and Member
+; userBusMem member ...
+; saveRunSig name
+userBusMemAtoD A_AtoD_v(a6) 0.35 0.35 /v(a6)
+userBusMemAtoD A_AtoD_v(a5) 0.35 0.35 /v(a5)
+userBusMemAtoD A_AtoD_v(a4) 0.35 0.35 /v(a4)
+userBusMemAtoD A_AtoD_v(a3) 0.35 0.35 /v(a3)
+userBusMemAtoD A_AtoD_v(a2) 0.35 0.35 /v(a2)
+userBusMemAtoD A_AtoD_v(a1) 0.35 0.35 /v(a1)
+userBusMemAtoD A_AtoD_v(a0) 0.35 0.35 /v(a0)
+saveRunSig "A[6:0]"
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "D_AtoD_v(d15)" 0.35 0.35 /v(d15)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "D_AtoD_v(d14)" 0.35 0.35 /v(d14)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "D_AtoD_v(d13)" 0.35 0.35 /v(d13)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "D_AtoD_v(d12)" 0.35 0.35 /v(d12)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "D_AtoD_v(d11)" 0.35 0.35 /v(d11)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "D_AtoD_v(d10)" 0.35 0.35 /v(d10)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "D_AtoD_v(d9)" 0.35 0.35 /v(d9)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "D_AtoD_v(d8)" 0.35 0.35 /v(d8)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "D_AtoD_v(d7)" 0.35 0.35 /v(d7)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "D_AtoD_v(d6)" 0.35 0.35 /v(d6)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "D_AtoD_v(d5)" 0.35 0.35 /v(d5)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "D_AtoD_v(d4)" 0.35 0.35 /v(d4)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "D_AtoD_v(d3)" 0.35 0.35 /v(d3)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "D_AtoD_v(d2)" 0.35 0.35 /v(d2)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "D_AtoD_v(d1)" 0.35 0.35 /v(d1)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "D_AtoD_v(d0)" 0.35 0.35 /v(d0)
+
+; Run Time Signal and Member
+; userBusMem member ...
+; saveRunSig name
+userBusMemAtoD D_AtoD_v(d15) 0.35 0.35 /v(d15)
+userBusMemAtoD D_AtoD_v(d14) 0.35 0.35 /v(d14)
+userBusMemAtoD D_AtoD_v(d13) 0.35 0.35 /v(d13)
+userBusMemAtoD D_AtoD_v(d12) 0.35 0.35 /v(d12)
+userBusMemAtoD D_AtoD_v(d11) 0.35 0.35 /v(d11)
+userBusMemAtoD D_AtoD_v(d10) 0.35 0.35 /v(d10)
+userBusMemAtoD D_AtoD_v(d9) 0.35 0.35 /v(d9)
+userBusMemAtoD D_AtoD_v(d8) 0.35 0.35 /v(d8)
+userBusMemAtoD D_AtoD_v(d7) 0.35 0.35 /v(d7)
+userBusMemAtoD D_AtoD_v(d6) 0.35 0.35 /v(d6)
+userBusMemAtoD D_AtoD_v(d5) 0.35 0.35 /v(d5)
+userBusMemAtoD D_AtoD_v(d4) 0.35 0.35 /v(d4)
+userBusMemAtoD D_AtoD_v(d3) 0.35 0.35 /v(d3)
+userBusMemAtoD D_AtoD_v(d2) 0.35 0.35 /v(d2)
+userBusMemAtoD D_AtoD_v(d1) 0.35 0.35 /v(d1)
+userBusMemAtoD D_AtoD_v(d0) 0.35 0.35 /v(d0)
+saveRunSig "D[15:0]"
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "Q_AtoD_v(q15)" 0.35 0.35 /v(q15)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "Q_AtoD_v(q14)" 0.35 0.35 /v(q14)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "Q_AtoD_v(q13)" 0.35 0.35 /v(q13)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "Q_AtoD_v(q12)" 0.35 0.35 /v(q12)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "Q_AtoD_v(q11)" 0.35 0.35 /v(q11)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "Q_AtoD_v(q10)" 0.35 0.35 /v(q10)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "Q_AtoD_v(q9)" 0.35 0.35 /v(q9)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "Q_AtoD_v(q8)" 0.35 0.35 /v(q8)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "Q_AtoD_v(q7)" 0.35 0.35 /v(q7)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "Q_AtoD_v(q6)" 0.35 0.35 /v(q6)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "Q_AtoD_v(q5)" 0.35 0.35 /v(q5)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "Q_AtoD_v(q4)" 0.35 0.35 /v(q4)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "Q_AtoD_v(q3)" 0.35 0.35 /v(q3)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "Q_AtoD_v(q2)" 0.35 0.35 /v(q2)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "Q_AtoD_v(q1)" 0.35 0.35 /v(q1)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "Q_AtoD_v(q0)" 0.35 0.35 /v(q0)
+
+; Run Time Signal and Member
+; userBusMem member ...
+; saveRunSig name
+userBusMemAtoD Q_AtoD_v(q15) 0.35 0.35 /v(q15)
+userBusMemAtoD Q_AtoD_v(q14) 0.35 0.35 /v(q14)
+userBusMemAtoD Q_AtoD_v(q13) 0.35 0.35 /v(q13)
+userBusMemAtoD Q_AtoD_v(q12) 0.35 0.35 /v(q12)
+userBusMemAtoD Q_AtoD_v(q11) 0.35 0.35 /v(q11)
+userBusMemAtoD Q_AtoD_v(q10) 0.35 0.35 /v(q10)
+userBusMemAtoD Q_AtoD_v(q9) 0.35 0.35 /v(q9)
+userBusMemAtoD Q_AtoD_v(q8) 0.35 0.35 /v(q8)
+userBusMemAtoD Q_AtoD_v(q7) 0.35 0.35 /v(q7)
+userBusMemAtoD Q_AtoD_v(q6) 0.35 0.35 /v(q6)
+userBusMemAtoD Q_AtoD_v(q5) 0.35 0.35 /v(q5)
+userBusMemAtoD Q_AtoD_v(q4) 0.35 0.35 /v(q4)
+userBusMemAtoD Q_AtoD_v(q3) 0.35 0.35 /v(q3)
+userBusMemAtoD Q_AtoD_v(q2) 0.35 0.35 /v(q2)
+userBusMemAtoD Q_AtoD_v(q1) 0.35 0.35 /v(q1)
+userBusMemAtoD Q_AtoD_v(q0) 0.35 0.35 /v(q0)
+saveRunSig "Q[15:0]"
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/Final/SRAM_2KB.tr0.fsdb"
+addSignal -w analog -ds pwl -c ID_RED7 -ls solid -lw 1 -h 98 /v(clk)
+addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 98 -holdScope v(a0)
+addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 98 -holdScope v(a1)
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 -holdScope v(a2)
+addSignal -w analog -ds pwl -c ID_GREEN5 -ls solid -lw 1 -h 98 -holdScope v(a3)
+addSignal -w analog -ds pwl -c ID_CYAN5 -ls solid -lw 1 -h 98 -holdScope v(a4)
+addSignal -w analog -ds pwl -c ID_BLUE5 -ls solid -lw 1 -h 98 -holdScope v(a5)
+addSignal -w analog -ds pwl -c ID_PURPLE5 -ls solid -lw 1 -h 98 -holdScope v(a6)
+addSignal -w analog -ds pwl -c ID_RED7 -ls solid -lw 1 -h 98 -holdScope v(d0)
+addSignal -w analog -ds pwl -c ID_ORANGE7 -ls solid -lw 1 -h 98 -holdScope v(d1)
+addSignal -w analog -ds pwl -c ID_YELLOW4 -ls solid -lw 1 -h 98 -holdScope v(d2)
+addSignal -w analog -ds pwl -c ID_GREEN7 -ls solid -lw 1 -h 98 -holdScope v(d3)
+addSignal -w analog -ds pwl -c ID_CYAN7 -ls solid -lw 1 -h 98 -holdScope v(d4)
+addSignal -w analog -ds pwl -c ID_BLUE7 -ls solid -lw 1 -h 98 -holdScope v(d5)
+addSignal -w analog -ds pwl -c ID_PURPLE7 -ls solid -lw 1 -h 98 -holdScope v(d6)
+addSignal -w analog -ds pwl -c ID_ORANGE4 -ls solid -lw 1 -h 98 -holdScope v(d7)
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 -holdScope v(d8)
+addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 98 -holdScope v(d9)
+addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 98 -holdScope v(d10)
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 -holdScope v(d11)
+addSignal -w analog -ds pwl -c ID_GREEN5 -ls solid -lw 1 -h 98 -holdScope v(d12)
+addSignal -w analog -ds pwl -c ID_CYAN5 -ls solid -lw 1 -h 98 -holdScope v(d13)
+addSignal -w analog -ds pwl -c ID_BLUE5 -ls solid -lw 1 -h 98 -holdScope v(d14)
+addSignal -w analog -ds pwl -c ID_PURPLE5 -ls solid -lw 1 -h 98 -holdScope v(d15)
+addSignal -w analog -ds pwl -c ID_RED7 -ls solid -lw 1 -h 98 -holdScope v(q0)
+addSignal -w analog -ds pwl -c ID_ORANGE7 -ls solid -lw 1 -h 98 -holdScope v(q1)
+addSignal -w analog -ds pwl -c ID_YELLOW4 -ls solid -lw 1 -h 98 -holdScope v(q2)
+addSignal -w analog -ds pwl -c ID_GREEN7 -ls solid -lw 1 -h 98 -holdScope v(q3)
+addSignal -w analog -ds pwl -c ID_CYAN7 -ls solid -lw 1 -h 98 -holdScope v(q4)
+addSignal -w analog -ds pwl -c ID_BLUE7 -ls solid -lw 1 -h 98 -holdScope v(q5)
+addSignal -w analog -ds pwl -c ID_PURPLE7 -ls solid -lw 1 -h 98 -holdScope v(q6)
+addSignal -w analog -ds pwl -c ID_ORANGE4 -ls solid -lw 1 -h 98 -holdScope v(q7)
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 -holdScope v(q8)
+addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 98 -holdScope v(q9)
+addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 98 -holdScope v(q10)
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 -holdScope v(q11)
+addSignal -w analog -ds pwl -c ID_GREEN5 -ls solid -lw 1 -h 98 -holdScope v(q12)
+addSignal -w analog -ds pwl -c ID_CYAN5 -ls solid -lw 1 -h 98 -holdScope v(q13)
+addSignal -w analog -ds pwl -c ID_BLUE5 -ls solid -lw 1 -h 98 -holdScope v(q14)
+addSignal -w analog -ds pwl -c ID_PURPLE5 -ls solid -lw 1 -h 98 -holdScope v(q15)
+addGroup "G2"
+addGroup "G3"
+addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 98 /v(bl[0])
+addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 98 -holdScope v(blb[0])
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 -holdScope v(wl0)
+addSignal -w analog -ds pwl -c ID_GREEN5 -ls solid -lw 1 -h 98 -holdScope v(wl1)
+addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 98 -holdScope v(wen)
+addSignal -w analog -ds pwl -c ID_RED7 -ls solid -lw 1 -h 98 -holdScope v(clk)
+addSignal -h 15 /A[6:0]
+addSignal -h 15 /D[15:0]
+addSignal -h 15 /Q[15:0]
+addGroup "G4"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/Final/SRAM_2KB.tr0.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/"
+
+SCOPE_LIST_BEGIN
+"/"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

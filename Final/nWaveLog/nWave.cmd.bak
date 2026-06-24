@@ -1,0 +1,93 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/Final/SRAM_2KB.tr0.fsdb}
+wvRestoreSignal -win $_nWave1 \
+           "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/Final/signal.rc" \
+           -overWriteAutoAlias on -appendSignals on
+wvResizeWindow -win $_nWave1 0 23 2048 1089
+wvZoomAll -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvSetCursor -win $_nWave1 514356.026786
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvScrollUp -win $_nWave1 26
+wvScrollUp -win $_nWave1 3
+wvScrollDown -win $_nWave1 29
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomAll -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSetCursor -win $_nWave1 518752.232143
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvZoomAll -win $_nWave1
+wvSetCursor -win $_nWave1 492375.000000
+wvSetCursor -win $_nWave1 544396.763393
+wvPrevView -win $_nWave1
+wvSetCursor -win $_nWave1 554654.575893
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomAll -win $_nWave1
+wvSetCursor -win $_nWave1 594953.125000
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomAll -win $_nWave1
+wvSetCursor -win $_nWave1 564912.388393
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSetCursor -win $_nWave1 548792.968750
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvSetCursor -win $_nWave1 559050.781250
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomAll -win $_nWave1
+wvZoomAll -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomAll -win $_nWave1
+wvZoomAll -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomAll -win $_nWave1
+wvSetCursor -win $_nWave1 580299.107143
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomAll -win $_nWave1
+wvScrollUp -win $_nWave1 4
+wvScrollUp -win $_nWave1 18
+wvScrollUp -win $_nWave1 3
+wvScrollDown -win $_nWave1 25
+wvScrollDown -win $_nWave1 0

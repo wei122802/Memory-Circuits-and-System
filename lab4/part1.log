@@ -1,0 +1,34 @@
+Using: /RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64/hspice DRAM_7nm_read.sp
+ ****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******                  
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: DRAM_7nm_read.sp                                                  
+  Command line options: /RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64/hspice DRAM_7nm_read.sp
+  Start time: Tue May 19 18:17:48 2026
+ lic:  
+ lic: FLEXlm: SDK_12.6 
+ lic: USER:   es26mcs068           HOSTNAME: ee24 
+ lic: HOSTID: "d85ed3efc3e3"       PID:      106722 
+ lic: Using FLEXlm license file: 
+ lic: 26585@lstc 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 14-jun-2027/2025.06 
+ lic: 21(in_use)/600(total) FLOATING license(s) on SERVER 26585@lstc 
+ lic:   
+  **warning** (DRAM_7nm_read.sp:57) unknown command ".step" is ignored
+  **error** (DRAM_7nm_read.sp:60) syntax error at or before "v" "Bitline1" ")" "TD" "=" "19.9n" 
+
+Syntax reference: 
+Syntax
+.MEASURE [DC|AC|TRAN] result TRIG ... TARG ...
++ [[GOAL=val]|GOALMAX|GOALMIN] [MINVAL=val] [WEIGHT=val]
+
+
+
+               ***** job aborted
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:       32.42(s)

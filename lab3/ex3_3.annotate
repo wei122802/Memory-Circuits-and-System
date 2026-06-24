@@ -1,0 +1,17 @@
+ ****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+
+================================================================
+*** This file format is subject to change **
+#Annotation for local variation contributors
+#=============
+<<v_final>> # Global_Variation 0%  Local_Variation 100% IRV_Variation 0%
+mpl               87.4444% 0
+mpr               12.3495% 0
+#=============
+#Selective simulation for extreme corners: Monte= list( 405, 588)

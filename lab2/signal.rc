@@ -1,0 +1,526 @@
+Magic 271485
+Revision Verdi_P-2019.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 23 1920 1017 299 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d . "" "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/lab2/decoder.tr0.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 77235.294118 1137075.163399
+cursor 111100.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 66
+; marker line index
+markerPos 75
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+activeDirFile "" "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/lab2/decoder.tr0.fsdb"
+allAtoD "address_AtoD_v(a5)" 0.35 0.35 /v(a5)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "address_AtoD_v(a4)" 0.35 0.35 /v(a4)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "address_AtoD_v(a3)" 0.35 0.35 /v(a3)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "address_AtoD_v(a2)" 0.35 0.35 /v(a2)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "address_AtoD_v(a1)" 0.35 0.35 /v(a1)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "address_AtoD_v(a0)" 0.35 0.35 /v(a0)
+
+; Run Time Signal and Member
+; userBusMem member ...
+; saveRunSig name
+userBusMemAtoD address_AtoD_v(a5) 0.35 0.35 /v(a5)
+userBusMemAtoD address_AtoD_v(a4) 0.35 0.35 /v(a4)
+userBusMemAtoD address_AtoD_v(a3) 0.35 0.35 /v(a3)
+userBusMemAtoD address_AtoD_v(a2) 0.35 0.35 /v(a2)
+userBusMemAtoD address_AtoD_v(a1) 0.35 0.35 /v(a1)
+userBusMemAtoD address_AtoD_v(a0) 0.35 0.35 /v(a0)
+saveRunSig "address[5:0]"
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl63)" 0.35 0.35 /v(wl63)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl62)" 0.35 0.35 /v(wl62)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl61)" 0.35 0.35 /v(wl61)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl60)" 0.35 0.35 /v(wl60)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl59)" 0.35 0.35 /v(wl59)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl58)" 0.35 0.35 /v(wl58)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl57)" 0.35 0.35 /v(wl57)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl56)" 0.35 0.35 /v(wl56)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl55)" 0.35 0.35 /v(wl55)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl54)" 0.35 0.35 /v(wl54)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl53)" 0.35 0.35 /v(wl53)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl52)" 0.35 0.35 /v(wl52)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl51)" 0.35 0.35 /v(wl51)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl50)" 0.35 0.35 /v(wl50)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl49)" 0.35 0.35 /v(wl49)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl48)" 0.35 0.35 /v(wl48)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl47)" 0.35 0.35 /v(wl47)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl46)" 0.35 0.35 /v(wl46)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl45)" 0.35 0.35 /v(wl45)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl44)" 0.35 0.35 /v(wl44)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl43)" 0.35 0.35 /v(wl43)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl42)" 0.35 0.35 /v(wl42)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl41)" 0.35 0.35 /v(wl41)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl40)" 0.35 0.35 /v(wl40)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl39)" 0.35 0.35 /v(wl39)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl38)" 0.35 0.35 /v(wl38)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl37)" 0.35 0.35 /v(wl37)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl36)" 0.35 0.35 /v(wl36)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl35)" 0.35 0.35 /v(wl35)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl34)" 0.35 0.35 /v(wl34)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl33)" 0.35 0.35 /v(wl33)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl32)" 0.35 0.35 /v(wl32)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl31)" 0.35 0.35 /v(wl31)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl30)" 0.35 0.35 /v(wl30)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl29)" 0.35 0.35 /v(wl29)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl28)" 0.35 0.35 /v(wl28)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl27)" 0.35 0.35 /v(wl27)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl26)" 0.35 0.35 /v(wl26)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl25)" 0.35 0.35 /v(wl25)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl24)" 0.35 0.35 /v(wl24)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl23)" 0.35 0.35 /v(wl23)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl22)" 0.35 0.35 /v(wl22)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl21)" 0.35 0.35 /v(wl21)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl20)" 0.35 0.35 /v(wl20)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl19)" 0.35 0.35 /v(wl19)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl18)" 0.35 0.35 /v(wl18)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl17)" 0.35 0.35 /v(wl17)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl16)" 0.35 0.35 /v(wl16)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl15)" 0.35 0.35 /v(wl15)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl14)" 0.35 0.35 /v(wl14)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl13)" 0.35 0.35 /v(wl13)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl12)" 0.35 0.35 /v(wl12)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl11)" 0.35 0.35 /v(wl11)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl10)" 0.35 0.35 /v(wl10)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl9)" 0.35 0.35 /v(wl9)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl8)" 0.35 0.35 /v(wl8)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl7)" 0.35 0.35 /v(wl7)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl6)" 0.35 0.35 /v(wl6)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl5)" 0.35 0.35 /v(wl5)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl4)" 0.35 0.35 /v(wl4)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl3)" 0.35 0.35 /v(wl3)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl2)" 0.35 0.35 /v(wl2)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl1)" 0.35 0.35 /v(wl1)
+
+; analog to digital list
+; allAtoD sig_name low_threshold high_threshold member_sig_name
+allAtoD "wordline_AtoD_v(wl0)" 0.35 0.35 /v(wl0)
+
+; Run Time Signal and Member
+; userBusMem member ...
+; saveRunSig name
+userBusMemAtoD wordline_AtoD_v(wl63) 0.35 0.35 /v(wl63)
+userBusMemAtoD wordline_AtoD_v(wl62) 0.35 0.35 /v(wl62)
+userBusMemAtoD wordline_AtoD_v(wl61) 0.35 0.35 /v(wl61)
+userBusMemAtoD wordline_AtoD_v(wl60) 0.35 0.35 /v(wl60)
+userBusMemAtoD wordline_AtoD_v(wl59) 0.35 0.35 /v(wl59)
+userBusMemAtoD wordline_AtoD_v(wl58) 0.35 0.35 /v(wl58)
+userBusMemAtoD wordline_AtoD_v(wl57) 0.35 0.35 /v(wl57)
+userBusMemAtoD wordline_AtoD_v(wl56) 0.35 0.35 /v(wl56)
+userBusMemAtoD wordline_AtoD_v(wl55) 0.35 0.35 /v(wl55)
+userBusMemAtoD wordline_AtoD_v(wl54) 0.35 0.35 /v(wl54)
+userBusMemAtoD wordline_AtoD_v(wl53) 0.35 0.35 /v(wl53)
+userBusMemAtoD wordline_AtoD_v(wl52) 0.35 0.35 /v(wl52)
+userBusMemAtoD wordline_AtoD_v(wl51) 0.35 0.35 /v(wl51)
+userBusMemAtoD wordline_AtoD_v(wl50) 0.35 0.35 /v(wl50)
+userBusMemAtoD wordline_AtoD_v(wl49) 0.35 0.35 /v(wl49)
+userBusMemAtoD wordline_AtoD_v(wl48) 0.35 0.35 /v(wl48)
+userBusMemAtoD wordline_AtoD_v(wl47) 0.35 0.35 /v(wl47)
+userBusMemAtoD wordline_AtoD_v(wl46) 0.35 0.35 /v(wl46)
+userBusMemAtoD wordline_AtoD_v(wl45) 0.35 0.35 /v(wl45)
+userBusMemAtoD wordline_AtoD_v(wl44) 0.35 0.35 /v(wl44)
+userBusMemAtoD wordline_AtoD_v(wl43) 0.35 0.35 /v(wl43)
+userBusMemAtoD wordline_AtoD_v(wl42) 0.35 0.35 /v(wl42)
+userBusMemAtoD wordline_AtoD_v(wl41) 0.35 0.35 /v(wl41)
+userBusMemAtoD wordline_AtoD_v(wl40) 0.35 0.35 /v(wl40)
+userBusMemAtoD wordline_AtoD_v(wl39) 0.35 0.35 /v(wl39)
+userBusMemAtoD wordline_AtoD_v(wl38) 0.35 0.35 /v(wl38)
+userBusMemAtoD wordline_AtoD_v(wl37) 0.35 0.35 /v(wl37)
+userBusMemAtoD wordline_AtoD_v(wl36) 0.35 0.35 /v(wl36)
+userBusMemAtoD wordline_AtoD_v(wl35) 0.35 0.35 /v(wl35)
+userBusMemAtoD wordline_AtoD_v(wl34) 0.35 0.35 /v(wl34)
+userBusMemAtoD wordline_AtoD_v(wl33) 0.35 0.35 /v(wl33)
+userBusMemAtoD wordline_AtoD_v(wl32) 0.35 0.35 /v(wl32)
+userBusMemAtoD wordline_AtoD_v(wl31) 0.35 0.35 /v(wl31)
+userBusMemAtoD wordline_AtoD_v(wl30) 0.35 0.35 /v(wl30)
+userBusMemAtoD wordline_AtoD_v(wl29) 0.35 0.35 /v(wl29)
+userBusMemAtoD wordline_AtoD_v(wl28) 0.35 0.35 /v(wl28)
+userBusMemAtoD wordline_AtoD_v(wl27) 0.35 0.35 /v(wl27)
+userBusMemAtoD wordline_AtoD_v(wl26) 0.35 0.35 /v(wl26)
+userBusMemAtoD wordline_AtoD_v(wl25) 0.35 0.35 /v(wl25)
+userBusMemAtoD wordline_AtoD_v(wl24) 0.35 0.35 /v(wl24)
+userBusMemAtoD wordline_AtoD_v(wl23) 0.35 0.35 /v(wl23)
+userBusMemAtoD wordline_AtoD_v(wl22) 0.35 0.35 /v(wl22)
+userBusMemAtoD wordline_AtoD_v(wl21) 0.35 0.35 /v(wl21)
+userBusMemAtoD wordline_AtoD_v(wl20) 0.35 0.35 /v(wl20)
+userBusMemAtoD wordline_AtoD_v(wl19) 0.35 0.35 /v(wl19)
+userBusMemAtoD wordline_AtoD_v(wl18) 0.35 0.35 /v(wl18)
+userBusMemAtoD wordline_AtoD_v(wl17) 0.35 0.35 /v(wl17)
+userBusMemAtoD wordline_AtoD_v(wl16) 0.35 0.35 /v(wl16)
+userBusMemAtoD wordline_AtoD_v(wl15) 0.35 0.35 /v(wl15)
+userBusMemAtoD wordline_AtoD_v(wl14) 0.35 0.35 /v(wl14)
+userBusMemAtoD wordline_AtoD_v(wl13) 0.35 0.35 /v(wl13)
+userBusMemAtoD wordline_AtoD_v(wl12) 0.35 0.35 /v(wl12)
+userBusMemAtoD wordline_AtoD_v(wl11) 0.35 0.35 /v(wl11)
+userBusMemAtoD wordline_AtoD_v(wl10) 0.35 0.35 /v(wl10)
+userBusMemAtoD wordline_AtoD_v(wl9) 0.35 0.35 /v(wl9)
+userBusMemAtoD wordline_AtoD_v(wl8) 0.35 0.35 /v(wl8)
+userBusMemAtoD wordline_AtoD_v(wl7) 0.35 0.35 /v(wl7)
+userBusMemAtoD wordline_AtoD_v(wl6) 0.35 0.35 /v(wl6)
+userBusMemAtoD wordline_AtoD_v(wl5) 0.35 0.35 /v(wl5)
+userBusMemAtoD wordline_AtoD_v(wl4) 0.35 0.35 /v(wl4)
+userBusMemAtoD wordline_AtoD_v(wl3) 0.35 0.35 /v(wl3)
+userBusMemAtoD wordline_AtoD_v(wl2) 0.35 0.35 /v(wl2)
+userBusMemAtoD wordline_AtoD_v(wl1) 0.35 0.35 /v(wl1)
+userBusMemAtoD wordline_AtoD_v(wl0) 0.35 0.35 /v(wl0)
+saveRunSig "wordline[63:0]"
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/lab2/decoder.tr0.fsdb"
+addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 98 /v(a0)
+addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 98 -holdScope v(a1)
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 -holdScope v(a2)
+addSignal -w analog -ds pwl -c ID_GREEN5 -ls solid -lw 1 -h 98 -holdScope v(a3)
+addSignal -w analog -ds pwl -c ID_CYAN5 -ls solid -lw 1 -h 98 -holdScope v(a4)
+addSignal -w analog -ds pwl -c ID_BLUE5 -ls solid -lw 1 -h 98 -holdScope v(a5)
+addGroup "G2"
+addSignal -w analog -ds pwl -c ID_PURPLE5 -ls solid -lw 1 -h 98 /v(wl0)
+addSignal -w analog -ds pwl -c ID_RED7 -ls solid -lw 1 -h 98 -holdScope v(wl1)
+addSignal -w analog -ds pwl -c ID_ORANGE7 -ls solid -lw 1 -h 98 -holdScope v(wl2)
+addSignal -w analog -ds pwl -c ID_YELLOW4 -ls solid -lw 1 -h 98 -holdScope v(wl3)
+addSignal -w analog -ds pwl -c ID_GREEN7 -ls solid -lw 1 -h 98 -holdScope v(wl4)
+addSignal -w analog -ds pwl -c ID_CYAN7 -ls solid -lw 1 -h 98 -holdScope v(wl5)
+addSignal -w analog -ds pwl -c ID_BLUE7 -ls solid -lw 1 -h 98 -holdScope v(wl6)
+addSignal -w analog -ds pwl -c ID_PURPLE7 -ls solid -lw 1 -h 98 -holdScope v(wl7)
+addSignal -w analog -ds pwl -c ID_ORANGE4 -ls solid -lw 1 -h 98 -holdScope v(wl8)
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 -holdScope v(wl9)
+addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 98 -holdScope v(wl10)
+addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 98 -holdScope v(wl11)
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 -holdScope v(wl12)
+addSignal -w analog -ds pwl -c ID_GREEN5 -ls solid -lw 1 -h 98 -holdScope v(wl13)
+addSignal -w analog -ds pwl -c ID_CYAN5 -ls solid -lw 1 -h 98 -holdScope v(wl14)
+addSignal -w analog -ds pwl -c ID_BLUE5 -ls solid -lw 1 -h 98 -holdScope v(wl15)
+addSignal -w analog -ds pwl -c ID_PURPLE5 -ls solid -lw 1 -h 98 -holdScope v(wl16)
+addSignal -w analog -ds pwl -c ID_RED7 -ls solid -lw 1 -h 98 -holdScope v(wl17)
+addSignal -w analog -ds pwl -c ID_ORANGE7 -ls solid -lw 1 -h 98 -holdScope v(wl18)
+addSignal -w analog -ds pwl -c ID_YELLOW4 -ls solid -lw 1 -h 98 -holdScope v(wl19)
+addSignal -w analog -ds pwl -c ID_GREEN7 -ls solid -lw 1 -h 98 -holdScope v(wl20)
+addSignal -w analog -ds pwl -c ID_CYAN7 -ls solid -lw 1 -h 98 -holdScope v(wl21)
+addSignal -w analog -ds pwl -c ID_BLUE7 -ls solid -lw 1 -h 98 -holdScope v(wl22)
+addSignal -w analog -ds pwl -c ID_PURPLE7 -ls solid -lw 1 -h 98 -holdScope v(wl23)
+addSignal -w analog -ds pwl -c ID_ORANGE4 -ls solid -lw 1 -h 98 -holdScope v(wl24)
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 -holdScope v(wl25)
+addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 98 -holdScope v(wl26)
+addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 98 -holdScope v(wl27)
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 -holdScope v(wl28)
+addSignal -w analog -ds pwl -c ID_GREEN5 -ls solid -lw 1 -h 98 -holdScope v(wl29)
+addSignal -w analog -ds pwl -c ID_CYAN5 -ls solid -lw 1 -h 98 -holdScope v(wl30)
+addSignal -w analog -ds pwl -c ID_BLUE5 -ls solid -lw 1 -h 98 -holdScope v(wl31)
+addSignal -w analog -ds pwl -c ID_PURPLE5 -ls solid -lw 1 -h 98 -holdScope v(wl32)
+addSignal -w analog -ds pwl -c ID_RED7 -ls solid -lw 1 -h 98 -holdScope v(wl33)
+addSignal -w analog -ds pwl -c ID_ORANGE7 -ls solid -lw 1 -h 98 -holdScope v(wl34)
+addSignal -w analog -ds pwl -c ID_YELLOW4 -ls solid -lw 1 -h 98 -holdScope v(wl35)
+addSignal -w analog -ds pwl -c ID_GREEN7 -ls solid -lw 1 -h 98 -holdScope v(wl36)
+addSignal -w analog -ds pwl -c ID_CYAN7 -ls solid -lw 1 -h 98 -holdScope v(wl37)
+addSignal -w analog -ds pwl -c ID_BLUE7 -ls solid -lw 1 -h 98 -holdScope v(wl38)
+addSignal -w analog -ds pwl -c ID_PURPLE7 -ls solid -lw 1 -h 98 -holdScope v(wl39)
+addSignal -w analog -ds pwl -c ID_ORANGE4 -ls solid -lw 1 -h 98 -holdScope v(wl40)
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 -holdScope v(wl41)
+addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 98 -holdScope v(wl42)
+addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 98 -holdScope v(wl43)
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 -holdScope v(wl44)
+addSignal -w analog -ds pwl -c ID_GREEN5 -ls solid -lw 1 -h 98 -holdScope v(wl45)
+addSignal -w analog -ds pwl -c ID_CYAN5 -ls solid -lw 1 -h 98 -holdScope v(wl46)
+addSignal -w analog -ds pwl -c ID_BLUE5 -ls solid -lw 1 -h 98 -holdScope v(wl47)
+addSignal -w analog -ds pwl -c ID_PURPLE5 -ls solid -lw 1 -h 98 -holdScope v(wl48)
+addSignal -w analog -ds pwl -c ID_RED7 -ls solid -lw 1 -h 98 -holdScope v(wl49)
+addSignal -w analog -ds pwl -c ID_ORANGE7 -ls solid -lw 1 -h 98 -holdScope v(wl50)
+addSignal -w analog -ds pwl -c ID_YELLOW4 -ls solid -lw 1 -h 98 -holdScope v(wl51)
+addSignal -w analog -ds pwl -c ID_GREEN7 -ls solid -lw 1 -h 98 -holdScope v(wl52)
+addSignal -w analog -ds pwl -c ID_CYAN7 -ls solid -lw 1 -h 98 -holdScope v(wl53)
+addSignal -w analog -ds pwl -c ID_BLUE7 -ls solid -lw 1 -h 98 -holdScope v(wl54)
+addSignal -w analog -ds pwl -c ID_PURPLE7 -ls solid -lw 1 -h 98 -holdScope v(wl55)
+addSignal -w analog -ds pwl -c ID_ORANGE4 -ls solid -lw 1 -h 98 -holdScope v(wl56)
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 -holdScope v(wl57)
+addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 98 -holdScope v(wl58)
+addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 98 -holdScope v(wl59)
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 -holdScope v(wl60)
+addSignal -w analog -ds pwl -c ID_GREEN5 -ls solid -lw 1 -h 98 -holdScope v(wl61)
+addSignal -w analog -ds pwl -c ID_CYAN5 -ls solid -lw 1 -h 98 -holdScope v(wl62)
+addSignal -w analog -ds pwl -c ID_BLUE5 -ls solid -lw 1 -h 98 -holdScope v(wl63)
+addGroup "G3"
+addSignal -w analog -ds pwl -c ID_RED7 -ls solid -lw 1 -h 98 /v(clk)
+addSignal -h 15 -UNSIGNED -UDEC /address[5:0]
+addSignal -h 15 /wordline[63:0]
+addGroup "G4"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/lab2/decoder.tr0.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/"
+
+SCOPE_LIST_BEGIN
+"/"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
+
+FILTER_SIGNAL_BEGIN
+
+""
+
+FILTER_STRING_LIST_BEGIN
+FILTER_STRING_LIST_END
+
+FILTER_TYPE_LIST_BEGIN
+"All"
+"Input"
+"Output"
+"Inout"
+"Net"
+"Register"
+"Buffer"
+"Linkage"
+"ClassTransaction"
+"Property"
+"Others"
+FILTER_TYPE_LIST_END
+
+FILTER_SIGNAL_END

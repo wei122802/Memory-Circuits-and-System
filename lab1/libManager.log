@@ -1,0 +1,21 @@
+\o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 04/25/2022 00:14 (sjfdcl1109) $
+\o Sub version:		sub-version  s254 
+\o Arguments:		-unmapped -mpssession virtuoso133428 -mpshost ee23 
+\o Working Directory:	ee23:/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/lab1
+\o 64-bit offsets
+\o Qt version: 		5.9.1
+\o changeWorkingDir("/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/lab1") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o Log file is "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/lab1/libManager.log".
+\o Opening libManager window.
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2058 161 602 491))
+\a nrResizeWindow(cdsLibManager list(3106 398 602 491))
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\o MPS service: shutdown
+\o libManager is exiting.
+\a exit(0)

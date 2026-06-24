@@ -1,0 +1,39 @@
+****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******
+Input File: get_cgg.sp
+lic:
+lic: FLEXlm: SDK_12.6
+lic: USER:   es26mcs068           HOSTNAME: ee24
+lic: HOSTID: "d85ed3efc3e3"       PID:      216959
+lic: Using FLEXlm license file:
+lic: 26585@lshc
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 14-jun-2027/2026.03
+lic: 471(in_use)/1235(total) FLOATING license(s) on SERVER 26585@lshc
+lic:
+
+ init: begin read circuit files, cpu clock= 1.05E-01
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/ad
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/behave
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/bjt
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/burr_brn
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/comlinear
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/dio
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/fet
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/lin_tech
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/pci
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/signet
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/ti
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/tline
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/xilinx
+       option post =     1.00
+ init: end read circuit files, cpu clock= 1.13E-01 peak memory=     399 mb
+ init: begin check errors, cpu clock= 1.13E-01
+ init: end check errors, cpu clock= 2.21E-01 peak memory=     400 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 2.21E-01
+       establish matrix -- done, cpu clock= 2.21E-01 peak memory=     400 mb
+       re-order matrix -- done, cpu clock= 2.21E-01 peak memory=     400 mb
+ init: end setup matrix, cpu clock= 2.21E-01 peak memory=     400 mb
+ dcop: begin dcop, cpu clock= 2.22E-01
+ dcop: end dcop, cpu clock= 2.30E-01 peak memory=     400 mb tot_iter=       2
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

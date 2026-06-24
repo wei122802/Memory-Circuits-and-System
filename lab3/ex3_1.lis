@@ -1,0 +1,228 @@
+Using: /RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64/hspice ex3_1.sp
+ ****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******                  
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: ex3_1.sp                                                          
+  Command line options: /RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64/hspice ex3_1.sp
+  Start time: Thu May  7 14:51:52 2026
+ lic:  
+ lic: FLEXlm: SDK_12.6 
+ lic: USER:   es26mcs068           HOSTNAME: ee24 
+ lic: HOSTID: "d85ed3efc3e3"       PID:      97810 
+ lic: Using FLEXlm license file: 
+ lic: 26585@lshc 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 14-jun-2027/2026.03 
+ lic: 682(in_use)/1235(total) FLOATING license(s) on SERVER 26585@lshc 
+ lic:   
+  **info** (ex3_1.sp:101) No analysis statements before the .probe statement that has no analysis type. TRAN type is assigned to it by default.
+1****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******                  
+ ******  
+ .title sram and sense amplifier simulation
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x_sram.                         sram               1.00 
+  **info** (ex3_1.sp:78) DC voltage reset to initial transient source value in source 0:vp. new dc=0.0000D+00
+  **warning** (ex3_1.sp:64) Value of resistance 0:r_dummy defined is limited to 0.000010 (RESMIN). Please specify a resistor value larger than the value of option RESMIN or set option RESMIN to a smaller value.
+  
+      
+             
+ Warning:'Floating bulk' occurs 2 times
+ Summary of floating bulk:
+ -----------------------
+ |Node      |Device    |
+ |----------+----------|
+ |x         |min_l     |
+ |x_sram.x  |x_sram.mpr|
+ -----------------------
+              
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=ex3_1.pa0
+
+ ******  
+ .title sram and sense amplifier simulation
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:bl      = 262.6955n 0:blb     = 262.6955n 0:pre     =   0.     
+ +0:q       =  43.7759f 0:qb      = 700.0000m 0:sa_en   =   0.     
+ +0:saen    =   0.      0:sense   = 700.0000m 0:sense_b = 700.0000m
+ +0:tail    = 678.3108m 0:vdd     = 700.0000m 0:wl      =   0.     
+ +0:x       = 676.9663m 1:x       = 656.4214m
+
+
+ **** voltage sources
+
+ subckt                                              
+ element  0:vp       0:vs       0:vvdd     0:vw      
+  volts      0.         0.       700.0000m    0.     
+  current  693.0873f  114.6119f  -52.5391u  125.6133f
+  power      0.         0.        36.7774u    0.     
+
+     total voltage source power dissipation=   36.7774u       watts
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:mpre1    0:mpre2    0:mpre3    0:mpre_sa1 0:mpre_sa2 0:min_l   
+ model    0:pmos_sra 0:pmos_sra 0:pmos_sra 0:pmos_sra 0:pmos_sra 0:nmos_sra
+ region   Saturation Saturation Subth      Linear     Linear     Cutoff    
+  id       -26.2695u  -26.2695u    0.      -698.6864f -698.6864f  477.7833a
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs     -700.0000m -700.0000m -262.6955n -700.0000m -700.0000m -678.3106m
+  vds     -699.9997m -699.9997m   -6.7849f   -6.2476n   -6.2476n   21.6892m
+  vbs        0.         0.       699.9997m    0.         0.        -1.3445m
+  vth     -328.3087m -328.3087m -339.1310m -339.1310m -339.1310m  410.1031m
+  vdsat   -374.5754m -374.5754m  -72.7964m -365.6435m -365.6435m   70.6690m
+  vod     -371.6913m -371.6913m  339.1307m -360.8690m -360.8690m   -1.0884 
+  beta       1.6413m    1.6413m    1.6413m    1.6413m    1.6413m    2.1736m
+  gam eff    0.         0.         0.         0.         0.         0.     
+  gm        94.1569u   94.1569u  4.869e-21    1.3092p    1.3092p  6.808e-22
+  gds        9.4596u    9.4596u   82.8769p  111.8328u  111.8328u   14.0641f
+  gmb       73.5674p   73.5674p    0.         1.2921a    1.2921a  5.401e-21
+  cdtot     10.2694a   10.2694a   10.2226a   25.3299a   25.3299a   10.2225a
+  cgtot     54.7498a   54.7498a   20.4452a   65.7671a   65.7671a   20.4450a
+  cstot     30.0435a   30.0435a   10.2226a   25.3299a   25.3299a   10.2225a
+  cbtot      0.         0.         0.         0.         0.         0.     
+  cgs       44.7571a   44.7571a   10.2226a   32.8836a   32.8836a   10.2225a
+  cgd        9.9928a    9.9928a   10.2226a   32.8836a   32.8836a   10.2225a
+
+
+
+ subckt                                                                    
+ element  0:min_r    0:mpl      0:mpr      0:mnl      0:mnr      0:mfoot   
+ model    0:nmos_sra 0:pmos_sra 0:pmos_sra 0:nmos_sra 0:nmos_sra 0:nmos_sra
+ region   Cutoff     Subth      Subth      Subth      Subth      Cutoff    
+  id       477.7833a  5.174e-19  5.186e-19  505.0058f  505.0057f  667.3565f
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs     -678.3106m -111.0223a  111.0223a   21.6892m   21.6892m    0.     
+  vds       21.6892m    6.2476n    6.2476n   21.6892m   21.6892m  678.3108m
+  vbs       -1.3445m  -23.0337m  -23.0337m   -1.3445m   -1.3445m  676.9663m
+  vth      410.1031m -339.1310m -339.1310m  410.1031m  410.1031m  406.7610m
+  vdsat     70.6690m  -72.7964m  -72.7964m   70.6690m   70.6690m   70.6690m
+  vod       -1.0884   339.1310m  339.1310m -388.4139m -388.4139m -406.7610m
+  beta       2.1736m    1.6413m    1.6413m    2.1736m    2.1736m    2.1736m
+  gam eff    0.         0.         0.         0.         0.         0.     
+  gm       6.808e-22   20.0546a   20.0521a   19.2811p   19.2811p   25.1506p
+  gds       14.0641f   82.8766p   82.8766p   14.9321p   14.9321p  510.3059f
+  gmb      5.401e-21  6.077e-24  6.092e-24    5.7083a    5.7083a   16.9014a
+  cdtot     10.2225a   10.2226a   10.2226a   10.2225a   10.2225a   10.2225a
+  cgtot     20.4450a   20.4452a   20.4452a   20.4450a   20.4450a   20.4450a
+  cstot     10.2225a   10.2226a   10.2226a   10.2225a   10.2225a   10.2225a
+  cbtot      0.         0.         0.         0.         0.         0.     
+  cgs       10.2225a   10.2226a   10.2226a   10.2225a   10.2225a   10.2225a
+  cgd       10.2225a   10.2226a   10.2226a   10.2225a   10.2225a   10.2225a
+
+
+
+ subckt   x_sram     x_sram     x_sram     x_sram     x_sram     x_sram    
+ element  1:mpr      1:mnr      1:mpl      1:mnl      1:mnpr     1:mnpl    
+ model    0:pmos_sra 0:nmos_sra 0:pmos_sra 0:nmos_sra 0:nmos_sra 0:nmos_sra
+ region   Subth      Linear     Linear     Cutoff     Cutoff     Cutoff    
+  id        -3.8124p    6.6354a   -2.5383a  678.4963f    3.9294a -678.4895f
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs      -22.7596f  700.0000m -700.0000m   43.7759f  -43.7759f -700.0000m
+  vds     -700.0000m   43.7759f  -22.7596f  700.0000m  262.6954n -699.9997m
+  vbs      -43.5786m  656.4214m  -43.5786m  656.4214m  656.4214m  -43.5786m
+  vth     -328.3087m  410.1164m -339.1310m  406.6380m  410.1164m  406.6380m
+  vdsat    -72.7965m  280.7545m -365.6435m   70.6690m   70.6690m   70.6690m
+  vod      328.3087m  289.8836m -360.8690m -406.6380m -410.1164m -406.6383m
+  beta       1.6413m    2.1736m    1.6413m    2.1736m    2.1736m    2.1736m
+  gam eff    0.         0.         0.         0.         0.         0.     
+  gm       147.4373p   10.3041a    4.7697a   25.5583p  150.0170a   25.5581p
+  gds        3.6592p  151.6697u  111.8329u  516.9757f   14.9555p  516.9707f
+  gmb       43.9009a  2.822e-23  4.846e-24   17.4665a  8.435e-23   17.4663a
+  cdtot     10.2225a   24.7315a   25.3299a   10.2225a   10.2225a   10.2225a
+  cgtot     20.4452a   63.9719a   65.7671a   20.4450a   20.4450a   20.4450a
+  cstot     10.2226a   24.7315a   25.3299a   10.2225a   10.2225a   10.2225a
+  cbtot      0.         0.         0.         0.         0.         0.     
+  cgs       10.2227a   31.9859a   32.8836a   10.2225a   10.2225a   10.2225a
+  cgd       10.2225a   31.9859a   32.8836a   10.2225a   10.2225a   10.2225a
+
+
+
+ ******
+ .title sram and sense amplifier simulation
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tp=  14.2025p  targ=   4.2892n   trig=   4.2750n
+ avg_read_pwr=   3.4603u  from=   4.0000n     to=   5.0000n
+
+          ***** job concluded
+ ******  
+ .title sram and sense amplifier simulation
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: AMD EPYC 7763 64-Core Processor
+ cpu MHz	: 1500.000
+  
+ OS:
+ Linux version 3.10.0-1160.88.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Tue Mar 7 15:41:52 UTC 2023
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :   256
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      15 # elements   =      25
+  # resistors   =       1 # capacitors =       2 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      18 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.03           1          13
+  transient          0.06         101         229          77 rev=         5
+  readin             0.02
+  errchk             0.01
+  setup              0.01
+  output             0.00
+
+
+           peak memory used        401.12 megabytes
+           total cpu time            0.14 seconds
+           total elapsed time        0.23 seconds
+           job started at     14:51:52 05/07/2026
+           job ended   at     14:51:53 05/07/2026
+
+>info:         ***** hspice job concluded
+           job total runtime         0.23 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.09(s)

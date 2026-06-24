@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/_deps/argparse-subbuild/CMakeFiles/argparse-populate"
+		},
+		{
+			"file" : "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/_deps/argparse-subbuild/CMakeFiles/argparse-populate.rule"
+		},
+		{
+			"file" : "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/_deps/argparse-subbuild/CMakeFiles/argparse-populate-complete.rule"
+		},
+		{
+			"file" : "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/_deps/argparse-subbuild/argparse-populate-prefix/src/argparse-populate-stamp/argparse-populate-build.rule"
+		},
+		{
+			"file" : "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/_deps/argparse-subbuild/argparse-populate-prefix/src/argparse-populate-stamp/argparse-populate-configure.rule"
+		},
+		{
+			"file" : "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/_deps/argparse-subbuild/argparse-populate-prefix/src/argparse-populate-stamp/argparse-populate-download.rule"
+		},
+		{
+			"file" : "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/_deps/argparse-subbuild/argparse-populate-prefix/src/argparse-populate-stamp/argparse-populate-install.rule"
+		},
+		{
+			"file" : "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/_deps/argparse-subbuild/argparse-populate-prefix/src/argparse-populate-stamp/argparse-populate-mkdir.rule"
+		},
+		{
+			"file" : "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/_deps/argparse-subbuild/argparse-populate-prefix/src/argparse-populate-stamp/argparse-populate-patch.rule"
+		},
+		{
+			"file" : "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/_deps/argparse-subbuild/argparse-populate-prefix/src/argparse-populate-stamp/argparse-populate-test.rule"
+		},
+		{
+			"file" : "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/_deps/argparse-subbuild/argparse-populate-prefix/src/argparse-populate-stamp/argparse-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"argparse-populate"
+		],
+		"name" : "argparse-populate"
+	}
+}

@@ -1,0 +1,117 @@
+### Custom WaveView ADV log file, revision T-2022.06 (build May 21, ) ###
+### created at 14:45:26 on Thu May  7 2026 (Linux AMD64) ###
+### Host Name: ee24   User ID: es26mcs068   PID: 94787   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window {Custom WaveView} {} 2006 109
+wv_move_window {Custom WaveView} {} 560 31
+wv_select_window {Custom WaveView} 
+wv_press_tool_button {Custom WaveView} {} {RecentFile0} 
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:ex3_3.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:ex3_3.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(sense_b)} 29
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(sense_b)} 29
+wv_select_list_item {Custom WaveView} {} {sigview} {v(sense)} 28
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(sense)} 28
+wv_move_window {Custom WaveView} {} 0 0
+wv_move_window {Custom WaveView} {} 560 31
+wv_select_window {Custom WaveView} 
+wv_move_window {Custom WaveView} {} 0 23
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_select_waveview 1 {waveview 1}
+wv_ctrl_select_panel WV1.PANEL2:1.LEGEND
+wv_press_key Delete 307 589
+wv_select_dialog {Confirmation} 
+wv_press_button {Confirmation} {} {Ok} 
+wv_select_list_item {Custom WaveView} {} {sigview} {v(bl)} 21
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(bl)} 21
+wv_select_list_item {Custom WaveView} {} {sigview} {v(blb)} 22
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(blb)} 22
+wv_select_list_item {Custom WaveView} {} {sigview} {v(pre)} 23
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(pre)} 23
+wv_select_list_item {Custom WaveView} {} {sigview} {v(sa_en)} 26
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(sa_en)} 26
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(sa_en)} 26
+wv_select_list_item {Custom WaveView} {} {sigview} {v(sense)} 28
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(sense)} 28
+wv_select_list_item {Custom WaveView} {} {sigview} {v(sense_b)} 29
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(sense_b)} 29
+wv_select_list_item {Custom WaveView} {} {sigview} {v(saen)} 27
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(saen)} 27
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL7:1.LINE1
+wv_select_line WV1.PANEL7:1.LINE1
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL7:1.LINE1
+wv_drag_item_to WV1 45 681
+wv_drag_enter WV1
+wv_drag_to WV1 47 673
+wv_drag_to WV1 47 668
+wv_drag_to WV1 40 565
+wv_drag_to WV1 39 556
+wv_drag_to WV1 36 457
+wv_drag_to WV1 37 443
+wv_drop_on WV1
+wv_drag_item_to WV1 45 681
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL4:1.LEGEND
+wv_select_panel WV1.PANEL4:1.LEGEND
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL4:1.LINE1
+wv_select_line WV1.PANEL4:1.LINE1
+wv_press_key Delete 379 591
+wv_select_dialog {Confirmation} 
+wv_press_button {Confirmation} {} {Ok} 
+wv_press_key Esc 337 216
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.LEGEND.WIDTH
+wv_drag_item_to WV1 79 52
+wv_move_wv_item WV1.PANEL1:1.LEGEND.WIDTH 171
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.LEGEND.WIDTH
+wv_drag_item_to WV1 169 49
+wv_move_wv_item WV1.PANEL1:1.LEGEND.WIDTH 166
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL6:1.LINE1
+wv_select_line WV1.PANEL6:1.LINE1
+wv_select_waveview 1 {waveview 1}
+wv_ctrl_select_panel WV1.PANEL5:1.LEGEND
+wv_select_waveview 1 {waveview 1}
+wv_ctrl_select_panel WV1.PANEL5:1.LEGEND
+wv_select_waveview 1 {waveview 1}
+wv_ctrl_select_line WV1.PANEL5:1.LINE1
+wv_select_waveview 1 {waveview 1}
+wv_ctrl_select_line WV1.PANEL4:1.LINE1
+wv_select_waveview 1 {waveview 1}
+wv_ctrl_select_line WV1.PANEL3:1.LINE1
+wv_select_waveview 1 {waveview 1}
+wv_ctrl_select_line WV1.PANEL2:1.LINE1
+wv_select_waveview 1 {waveview 1}
+wv_ctrl_select_line WV1.PANEL1:1.LINE1
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL2:1.LEGEND
+wv_select_panel WV1.PANEL2:1.LEGEND
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LINE1
+wv_select_line WV1.PANEL1:1.LINE1
+wv_select_waveview 1 {waveview 1}
+wv_ctrl_select_line WV1.PANEL2:1.LINE1
+wv_select_waveview 1 {waveview 1}
+wv_ctrl_select_line WV1.PANEL3:1.LINE1
+wv_select_waveview 1 {waveview 1}
+wv_ctrl_select_line WV1.PANEL4:1.LINE1
+wv_select_waveview 1 {waveview 1}
+wv_ctrl_select_line WV1.PANEL5:1.LINE1
+wv_select_waveview 1 {waveview 1}
+wv_ctrl_select_line WV1.PANEL6:1.LINE1
+wv_close_window {Custom WaveView} 
+wv_select_dialog {Confirmation} 
+#wv_press_button {Confirmation} {} {Ok} 

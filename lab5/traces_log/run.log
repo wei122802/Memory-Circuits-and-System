@@ -1,0 +1,238 @@
+Frontend:
+  impl: LoadStoreStallTrace
+  average_bandwidth: 16.9256191
+  worst_bandwidth: .inf
+  peak_bandwidth: -1
+
+MemorySystem:
+  impl: Global_Controller
+  bandwidth_utilization: 0  # The bandwidth utilization in percentage
+  worst_bandwidth: 0
+  peak_bandwidth: 0
+  average_bandwidth: 0
+  total_num_other_requests: 0
+  total_num_write_requests: 256
+  total_num_read_requests: 256
+  memory_system_cycles: 1936
+
+  DRAM:
+    impl: DDR4
+    act_background_energy_rank3: 60.412799999999997
+    total_energy_rank3: 198.29369600000001
+    total_cmd_energy_rank3: 80.391296000000011
+    total_background_energy_rank3: 117.9024
+    idle_cycles_rank2: 944
+    idle_cycles_rank3: 944
+    total_active_energy: 241.65119999999999
+    total_background_energy_rank0: 117.9024
+    total_cmd_energy_rank0: 80.391296000000011
+    total_idle_energy: 229.95839999999998
+    active_cycles_rank0: 992
+    total_precharge_energy: 15.628544
+    total_energy: 793.17478400000005
+    idle_cycles_rank0: 944
+    total_energy_rank2: 198.29369600000001
+    total_activation_energy: 17.725439999999999
+    total_refresh_energy: 0
+    total_wupr_energy: 0
+    pre_background_energy_rank1: 57.489599999999996
+    total_cmd_energy: 321.56518400000004
+    active_cycles_rank3: 992
+    pre_background_energy_rank2: 57.489599999999996
+    total_write_energy: 144.10624000000001
+    idle_cycles_rank1: 944
+    total_background_energy: 471.6096
+    act_background_energy_rank1: 60.412799999999997
+    total_cmd_energy_rank1: 80.391296000000011
+    total_read_energy: 144.10496000000001
+    total_background_energy_rank1: 117.9024
+    total_energy_rank0: 198.29369600000001
+    active_cycles_rank2: 992
+    act_background_energy_rank0: 60.412799999999997
+    pre_background_energy_rank0: 57.489599999999996
+    pre_background_energy_rank3: 57.489599999999996
+    total_background_energy_rank2: 117.9024
+    total_energy_rank1: 198.29369600000001
+    active_cycles_rank1: 992
+    total_cmd_energy_rank2: 80.391296000000011
+    act_background_energy_rank2: 60.412799999999997
+  AddrMapper:
+    impl: New_mapping
+
+
+  Controller:
+    impl: BankLevelController
+    id: Channel 0
+    avg_read_latency_0: 5.19999981
+    read_queue_len_avg_0: 0.297520667
+    write_queue_len_0: 0
+    queue_len_0: 960
+    num_other_reqs_0: 0
+    num_write_reqs_0: 240
+    read_latency_0: 1248
+    priority_queue_len_avg_0: 0.198347107
+    row_hits_0: 96
+    priority_queue_len_0: 384
+    row_misses_0: 32
+    row_conflicts_0: 0
+    read_row_misses_0: 16
+    queue_len_avg_0: 0.495867759
+    read_row_conflicts_core_0: 0
+    read_row_hits_0: 48
+    write_queue_len_avg_0: 0
+    read_row_conflicts_0: 0
+    write_row_misses_0: 16
+    write_row_conflicts_0: 0
+    read_queue_len_0: 576
+    write_row_hits_0: 48
+    read_row_hits_core_0: 48
+    read_row_misses_core_0: 16
+    num_read_reqs_0: 240
+    Scheduler:
+      impl: FCFS
+    RefreshManager:
+      impl: AllBank
+
+
+    RowPolicy:
+      impl: ClosedRowPolicy
+      num_close_reqs: 32
+    ControllerPlugin:
+      impl: CommandCounter
+    ControllerPlugin:
+      impl: TraceRecorder
+
+
+
+  Controller:
+    impl: BankLevelController
+    id: Channel 1
+    read_queue_len_avg_1: 0.297520667
+    priority_queue_len_1: 384
+    write_queue_len_1: 0
+    num_write_reqs_1: 240
+    row_hits_1: 96
+    row_misses_1: 32
+    avg_read_latency_1: 5.19999981
+    queue_len_avg_1: 0.495867759
+    read_queue_len_1: 576
+    read_row_misses_1: 16
+    priority_queue_len_avg_1: 0.198347107
+    read_row_hits_1: 48
+    queue_len_1: 960
+    read_row_conflicts_1: 0
+    num_read_reqs_1: 240
+    num_other_reqs_1: 0
+    row_conflicts_1: 0
+    write_row_hits_1: 48
+    write_queue_len_avg_1: 0
+    write_row_misses_1: 16
+    write_row_conflicts_1: 0
+    read_row_hits_core_0: 48
+    read_row_misses_core_0: 16
+    read_latency_1: 1248
+    read_row_conflicts_core_0: 0
+    Scheduler:
+      impl: FCFS
+    RefreshManager:
+      impl: AllBank
+
+
+    RowPolicy:
+      impl: ClosedRowPolicy
+      num_close_reqs: 32
+    ControllerPlugin:
+      impl: CommandCounter
+    ControllerPlugin:
+      impl: TraceRecorder
+
+
+
+  Controller:
+    impl: BankLevelController
+    id: Channel 2
+    read_latency_2: 1248
+    queue_len_avg_2: 0.495867759
+    priority_queue_len_2: 384
+    read_queue_len_avg_2: 0.297520667
+    write_queue_len_2: 0
+    queue_len_2: 960
+    num_write_reqs_2: 240
+    row_hits_2: 96
+    avg_read_latency_2: 5.19999981
+    write_queue_len_avg_2: 0
+    num_other_reqs_2: 0
+    row_misses_2: 32
+    write_row_hits_2: 48
+    row_conflicts_2: 0
+    write_row_conflicts_2: 0
+    read_row_hits_2: 48
+    read_row_misses_2: 16
+    read_row_conflicts_2: 0
+    write_row_misses_2: 16
+    read_row_conflicts_core_0: 0
+    num_read_reqs_2: 240
+    priority_queue_len_avg_2: 0.198347107
+    read_row_hits_core_0: 48
+    read_queue_len_2: 576
+    read_row_misses_core_0: 16
+    Scheduler:
+      impl: FCFS
+    RefreshManager:
+      impl: AllBank
+
+
+    RowPolicy:
+      impl: ClosedRowPolicy
+      num_close_reqs: 32
+    ControllerPlugin:
+      impl: CommandCounter
+    ControllerPlugin:
+      impl: TraceRecorder
+
+
+
+  Controller:
+    impl: BankLevelController
+    id: Channel 3
+    priority_queue_len_avg_3: 0.198347107
+    write_queue_len_avg_3: 0
+    queue_len_avg_3: 0.495867759
+    avg_read_latency_3: 5.19999981
+    priority_queue_len_3: 384
+    read_queue_len_3: 576
+    queue_len_3: 960
+    num_write_reqs_3: 240
+    row_hits_3: 96
+    row_conflicts_3: 0
+    read_row_misses_3: 16
+    read_row_hits_3: 48
+    write_row_conflicts_3: 0
+    read_row_conflicts_3: 0
+    row_misses_3: 32
+    write_row_hits_3: 48
+    write_row_misses_3: 16
+    read_row_hits_core_0: 48
+    num_other_reqs_3: 0
+    read_row_misses_core_0: 16
+    read_row_conflicts_core_0: 0
+    read_latency_3: 1248
+    read_queue_len_avg_3: 0.297520667
+    write_queue_len_3: 0
+    num_read_reqs_3: 240
+    Scheduler:
+      impl: FCFS
+    RefreshManager:
+      impl: AllBank
+
+
+    RowPolicy:
+      impl: ClosedRowPolicy
+      num_close_reqs: 32
+    ControllerPlugin:
+      impl: CommandCounter
+    ControllerPlugin:
+      impl: TraceRecorder
+
+
+

@@ -1,0 +1,131 @@
+ ****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+
+##================================================================
+*** This file format is subject to change **
+
+Measure File: ex3_2.mt0
+
+##Variation_Options
+#------------------
+option ignore_global_variation = no
+option ignore_local_variation = no
+option ignore_interconnect_variation = no
+option ignore_spatial_variation = no
+option ignore_variation = no
+option normal_limit     = 20
+option replicates       = 1
+option seed             = 65729
+option stream           = 1
+option sensitivity_analysis  = yes
+option output_sigma_value = 1
+option use_agauss_format = yes
+option screening_method = pearson
+option set_missing_value = yes
+option large_scale_mc = no
+option qqnorm_file = yes
+option histogram_file = yes
+option sampling_method = SRS 
+option random_generator =  MCG
+##end_of_Variation_Options
+
+##Summary_Statistics
+#-------------------
+Total number of independent random variables = 2
+Number of independent global random variables = 0
+Number of independent local random variables = 2
+Number of Samples:  1000
+Number of Meas Failure: 0
+Number of Job Abortion: 0
+##sampling_method = SRS|LHS, the first MC sample is nominal value and is excluded in Monte Carlo data mining.
+Responses with very small variation dropped from further analysis:
+(variable = value)
+read_0_success = 1
+##end_of_Sumary_Statistics
+
+##Sample_Moments
+#---------------
+#CI: 95% Bootstrap confidence intervals based on 500 re-samples
+                 CI          mean       median     stdDev     mad        skewness   kurtosis   
+                2.5%        6.463e-02  6.331e-02  3.616e-03  2.181e-03  1.310e+00   4.345e+00
+v_final                     6.486e-02  6.361e-02  3.842e-03  2.363e-03  1.457e+00   5.011e+00
+                97.5%       6.510e-02  6.377e-02  4.063e-03  2.582e-03  1.626e+00   5.783e+00
+
+##end_of_Sample_Moments
+
+##Quantiles
+#----------
+#(Percentile table adds appropriate percentile points as the number of samples increases.)
+#Percentile_Value                                 Equivalent_Sigma_Value 
+#(Q15.86552539,    Q84.134473607)                 (-1, 1)
+#(Q2.275013195,    Q97.724986805)                 (-2, 2)
+#(Q0.134989803,    Q99.865010197)                 (-3, 3)
+#(Q3.167124183e-3, Q99.996832876)                 (-4, 4)
+#(Q2.866515719e-5, Q99.999971335)                 (-5, 5)
+#(Q9.865876450e-8, Q99.999999901)                 (-6, 6)
+                CI              Q1.000000e-02   Q1.000000e-01   Q1.349898e-01   Q1              Q2.275013195    Q5              
+                2.5%            5.443426e-02    5.482647e-02    5.497896e-02    5.763584e-02    5.903769e-02    6.081942e-02    
+v_final                         5.650104e-02    5.718126e-02    5.722674e-02    5.847199e-02    6.029540e-02    6.103606e-02    
+                97.5%           5.712624e-02    5.763442e-02    5.765459e-02    5.967141e-02    6.077717e-02    6.118148e-02    
+
+                                Q1.586553e+01   Q25             Q75             Q84.134473607   Q95             Q97.724986805   
+                2.5%            6.180810e-02    6.232631e-02    6.597025e-02    6.714398e-02    7.320285e-02    7.465189e-02    
+v_final                         6.200701e-02    6.240880e-02    6.622339e-02    6.773301e-02    7.381085e-02    7.489296e-02    
+                97.5%           6.213457e-02    6.250435e-02    6.654553e-02    6.821077e-02    7.452276e-02    7.585925e-02    
+
+                                Q99             Q99.865010197   Q99.9           Q99.99          
+                2.5%            7.535050e-02    7.843260e-02    7.886614e-02    8.015663e-02    
+v_final                         7.699717e-02    8.008169e-02    8.010780e-02    8.071154e-02    
+                97.5%           7.883558e-02    8.206248e-02    8.219782e-02    8.254594e-02    
+
+##end_of_Quantiles
+
+##Extremes_and_Corners
+#---------------------
+                 min             max             minIndex          maxIndex        
+v_final          5.643e-02  8.078e-02     347            609
+##end_of_Extremes_and_Corners
+
+##Response_Correlation_Matrix (%)
+#--------------------------------
+                v_final 
+v_final          100.0  
+##end_of_Response_Correlation_Matrix
+
+##Selective_Simulation:
+#----------------------
+#To simulate corners only:
+Use: ... Monte = list(347, 609)
+##end_of_Selective_Simulation
+
+##Variables_Screened_by_Importance
+#---------------------------------
+Method: Pearson Correlation
+#Print threshold: 95%
+#(elements with EquivVar smaller than 0.05% will not be printed.) 
+#(parameters with ParVar smaller than 0.01% will not be printed.) 
+
+Response: v_final
+Global Variation = 0.000e+00,  Local Variation = 3.842e-03
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+vddblb          noise_blb       97.6%    97.6%    .          
+.               .               .          .          .     noise_blb  ILNC -0.56 97.6%
+##end_of_Variables_Screened_by_Importance
+
+##Important_Elements_or_Models
+#------------------------------
+vddblb
+##end_of_Important_Elements_or_Models
+##end_of_Instance_Parameters
+
+##Subcircuit_Encoding
+#--------------------
+Key Subckt
+
+##end_of_Subcircuit_Encoding

@@ -1,0 +1,8 @@
+       1 x_pex.
+       2 x_pex.x_pm_sram_cell_wl.
+       3 x_pex.x_pm_sram_cell_q.
+       4 x_pex.x_pm_sram_cell_qb.
+       5 x_pex.x_pm_sram_cell_blb.
+       6 x_pex.x_pm_sram_cell_bl.
+       7 x_pex.x_pm_sram_cell_vss.
+       8 x_pex.x_pm_sram_cell_vdd.

@@ -1,0 +1,7 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The patch step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+command (connected)=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/bin/cmake;-Dcan_fetch=YES;-P;/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/_deps/spdlog-subbuild/spdlog-populate-prefix/tmp/spdlog-populate-gitupdate.cmake
+command (disconnected)=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/bin/cmake;-Dcan_fetch=NO;-P;/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/_deps/spdlog-subbuild/spdlog-populate-prefix/tmp/spdlog-populate-gitupdate.cmake
+work_dir=/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/ext/spdlog

@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='Q-2020.03-SP2-2 linux64' PARAM_COUNT=0
+.TITLE '.title sram and sense amplifier simulation'
+ tp               avg_read_pwr     temper           alter#          
+  1.420e-11        3.460e-06         25.0000        1               

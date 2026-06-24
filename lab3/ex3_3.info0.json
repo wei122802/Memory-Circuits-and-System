@@ -1,0 +1,32 @@
+{
+"Copyright":" ****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.  This software and the associated documentation are proprietary  to Synopsys, Inc. This software may only be used in accordance  with the terms and conditions of a written license agreement with  Synopsys, Inc. All other use, reproduction, or distribution of  this software is strictly prohibited.",
+"Comment" : "File format and content subject to change.",
+"Measure_File":"/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/lab3/ex3_3.mt0",
+"Histogram_File":"/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/lab3/ex3_3.hmt0.csv",
+"QQ_plot_File":"/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/lab3/ex3_3.qqt0.csv",
+"MPP_File":"/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/lab3/ex3_3.mpp0",
+"Alter_Index":0,
+"Summary_Statistics":{
+"Total_Random_Variable":4,
+"Normal_Distribution_Variable":4,
+"Non_Normal_Distribution_Variable":0,
+"MC_Samples":1000,
+"Meas_Failure_Number":0,
+"Job_Abortion_Number":0,
+"Sigma_Amplification_Factor":1,
+"Confidence_Level":0.95,
+"Measure_Names":["read_0_success","v_final"],
+"Responses_Dropped_With_Small_Variation":["read_0_success"]
+  },
+"VB_options":{
+"Sampling_Method":"SRS",
+"Random_Generator":"MCG",
+"Normal_Limit":20
+  },
+"Percentiles":{
+"Auto_Percentiles":[0.0001,0.001,0.0013499,0.01,0.0227501,0.05,0.158655,0.25,0.5,0.75,0.841345,0.95,0.97725,0.99,0.99865,0.999,0.9999]
+  },
+"Measure_Statistics":{
+"v_final":{"Nominal":0.134602,"Mean":0.134629,"Stddev":0.0106685,"Skewness":0.224712,"Kurtosis":2.79386,"IQR":0.0631884}
+  }
+}

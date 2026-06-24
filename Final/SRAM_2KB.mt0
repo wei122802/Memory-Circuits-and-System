@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='Q-2020.03-SP2-2 linux64' PARAM_COUNT=0
+.TITLE '2kb sram final project - full i/o pinout setup'
+ avg_power        temper           alter#          
+ -6.985e-07         25.0000        1               

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+CONFIG=$1
+LOG=${2:-../traces_log/run.log}
+
+./ramulator2 -f "$CONFIG" > "$LOG" 2>&1

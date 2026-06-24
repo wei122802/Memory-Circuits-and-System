@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='Q-2020.03-SP2-2 linux64' PARAM_COUNT=0
+.TITLE '* 6-to-64 row decoder testbench'
+ avg_pwr          temper           alter#          
+  1.291e-05         25.0000        1               

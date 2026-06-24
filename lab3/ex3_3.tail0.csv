@@ -1,0 +1,57 @@
+ ****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+
+================================================================
+*** This file format is subject to change **
+#Tail samples and indices
+#Number of Measures
+1
+#Number of samples in each tail
+9
+#Measure names
+v_final
+#Measure values in left tail
+1.0901220e-01
+1.0984950e-01
+1.1040800e-01
+1.1041640e-01
+1.1121550e-01
+1.1147210e-01
+1.1168020e-01
+1.1200180e-01
+1.1200800e-01
+#Measure values in right tail
+1.6172110e-01
+1.6205400e-01
+1.6286600e-01
+1.6324880e-01
+1.6333080e-01
+1.6336770e-01
+1.6777220e-01
+1.6893580e-01
+1.7265540e-01
+#Index values in left tail
+588
+313
+932
+469
+609
+37
+246
+791
+13
+#Index values in right tail
+211
+537
+163
+428
+247
+920
+599
+166
+405

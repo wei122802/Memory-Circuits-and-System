@@ -1,0 +1,37 @@
+****** HSPICE ******  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.
+
+This software and the associated documentation are proprietary
+to Synopsys, Inc. This software may only be used in accordance
+with the terms and conditions of a written license agreement with
+Synopsys, Inc. All other use, reproduction, or distribution of
+this software is strictly prohibited.
+
+Username: es26mcs068, PID: 79900
+Command_Line_Options: ex3_2.info0.json
+
+System Activity Monitoring (format subject to change)
+================================================================
+
+Hostname: ee24
+N cores: 256
+Model name: AMD EPYC 7763 64-Core Processor
+Cache size: 512 KB
+OS kernel: Linux 3.10.0-1160.88.1.el7.x86_64
+OS release: CentOS Linux release 7.9.2009 (Core)
+CPU load: 1.380000, 1.000000, 0.900000
+Virtual memory: Total=1007.6G, Available=978.0G, Percent=2.9, Used=26.2G, Free=706.4G, Active=57.0G, Inactive=221.3G, Buffers=52.0K, Cached=275.0G, Shared=1.0G
+
+/tmp file space:
+Filesystem              1G-blocks  Used Available Use% Mounted on
+/dev/mapper/centos-root       200   182        19  91% /
+
+Output directory /RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/lab3 file space:
+Filesystem       1G-blocks  Used Available Use% Mounted on
+eehpcraid:/RAID2    143067 36473    106594  26% /RAID2
+
+Start time: 2026-05-03 02:09:45
+
+   elapsed    cpu    memory      /tmp        output       estimated   AVA     total    total
+   time (s)   load   available   available   available    time to     %cpu     rss      vms
+                %      (GB)        (GB)        (GB)       finish
+         0     0.5     978.0        19.0   106594.0                   97.1    73.6M   495.4M

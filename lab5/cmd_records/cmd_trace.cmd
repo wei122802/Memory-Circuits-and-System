@@ -1,0 +1,5 @@
+RD, 64
+PRE, 32
+WR, 64
+ACT, 32
+REFab, 0

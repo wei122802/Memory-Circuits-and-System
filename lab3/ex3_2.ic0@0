@@ -1,0 +1,28 @@
+* "simulator" "HSPICE" 
+* "version" "Q-2020.03-SP2-2 linux64"
+* "format" "HSP"
+* "rundate" "02:09:30 05/03/2026 "
+* "netlist" "ex3_2.sp "
+* "runtitle" ".title bl and blb voltage variation"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ bl = 270.7811n       
++ blb = 270.7811n       
++ pre =   0.            
++ q =  43.7759f       
++ qb = 700.0000m       
++ saen =   0.            
++ sense = 350.0001m       
++ sense_b = 350.0001m       
++ tail = 336.4615m       
++ vdd = 700.0000m       
++ vdd_bl = 700.0000m       
++ vdd_blb = 700.0000m       
++ wl =   0.            
++ x = 324.7484m       
++ x_sram.x = 656.4214m       
+***   END: Saved Operating Point ***                     

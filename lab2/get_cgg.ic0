@@ -1,0 +1,17 @@
+* "simulator" "HSPICE" 
+* "version" "Q-2020.03-SP2-2 linux64"
+* "format" "HSP"
+* "rundate" "19:07:30 04/17/2026 "
+* "netlist" "get_cgg.sp "
+* "runtitle" "* hspice script to extract cgg for nmos_sram"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ drain = 700.0000m       
++ gate = 700.0000m       
++ vdd = 700.0000m       
++ vss =   0.            
+***   END: Saved Operating Point ***                     

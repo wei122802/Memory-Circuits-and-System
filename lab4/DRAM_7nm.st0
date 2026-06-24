@@ -1,0 +1,95 @@
+****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******
+Input File: DRAM_7nm.sp
+lic:
+lic: FLEXlm: SDK_12.6
+lic: USER:   es26mcs068           HOSTNAME: ee24
+lic: HOSTID: "d85ed3efc3e3"       PID:      246715
+lic: Using FLEXlm license file:
+lic: 26585@lshc
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 14-jun-2027/2026.03
+lic: 691(in_use)/1235(total) FLOATING license(s) on SERVER 26585@lshc
+lic:
+
+ init: begin read circuit files, cpu clock= 1.16E-01
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/ad
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/behave
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/bjt
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/burr_brn
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/comlinear
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/dio
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/fet
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/lin_tech
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/pci
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/signet
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/ti
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/tline
+       option search = /usr/cad/synopsys/hspice/cur/hspice/Q-2020.03-SP2-2/hspice/parts/xilinx
+       option post =     1.00
+ init: end read circuit files, cpu clock= 1.25E-01 peak memory=     399 mb
+ init: begin check errors, cpu clock= 1.25E-01
+ init: end check errors, cpu clock= 1.98E-01 peak memory=     400 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.98E-01
+       establish matrix -- done, cpu clock= 1.99E-01 peak memory=     400 mb
+       re-order matrix -- done, cpu clock= 1.99E-01 peak memory=     400 mb
+ init: end setup matrix, cpu clock= 1.99E-01 peak memory=     400 mb
+ sweep: parameter       parameter1       begin, #sweeps =   4
+ parameter: c_bl            =    6.00E-14
+ output: DRAM_7nm.mt0
+ sweep: tran tran1    begin, stop_t=  1.10E-07 #sweeps=1101 cpu clock= 2.02E-01
+ tran: time= 1.1975E-08 tot_iter=      48 conv_iter=      24 cpu clock= 2.03E-01
+ tran: time= 2.2168E-08 tot_iter=     140 conv_iter=      64 cpu clock= 2.08E-01
+ tran: time= 3.4975E-08 tot_iter=     157 conv_iter=      71 cpu clock= 2.09E-01
+ tran: time= 4.4488E-08 tot_iter=     253 conv_iter=     111 cpu clock= 2.15E-01
+ tran: time= 5.5000E-08 tot_iter=     308 conv_iter=     137 cpu clock= 2.20E-01
+ tran: time= 6.6830E-08 tot_iter=     405 conv_iter=     179 cpu clock= 2.29E-01
+ tran: time= 7.7108E-08 tot_iter=     488 conv_iter=     218 cpu clock= 2.34E-01
+ tran: time= 8.8024E-08 tot_iter=     540 conv_iter=     241 cpu clock= 2.37E-01
+ tran: time= 9.9975E-08 tot_iter=     548 conv_iter=     245 cpu clock= 2.38E-01
+ tran: time= 1.1000E-07 tot_iter=     586 conv_iter=     264 cpu clock= 2.39E-01
+ sweep: tran tran1    end, cpu clock= 2.42E-01 peak memory=     400 mb
+ parameter: c_bl            =    8.00E-14
+ output: DRAM_7nm.mt0
+ sweep: tran tran2    begin, stop_t=  1.10E-07 #sweeps=1101 cpu clock= 2.49E-01
+ tran: time= 1.1975E-08 tot_iter=      48 conv_iter=      24 cpu clock= 2.50E-01
+ tran: time= 2.2063E-08 tot_iter=     136 conv_iter=      63 cpu clock= 2.55E-01
+ tran: time= 3.4975E-08 tot_iter=     155 conv_iter=      71 cpu clock= 2.56E-01
+ tran: time= 4.4319E-08 tot_iter=     246 conv_iter=     109 cpu clock= 2.62E-01
+ tran: time= 5.5000E-08 tot_iter=     306 conv_iter=     136 cpu clock= 2.64E-01
+ tran: time= 6.7386E-08 tot_iter=     401 conv_iter=     177 cpu clock= 2.72E-01
+ tran: time= 7.7019E-08 tot_iter=     485 conv_iter=     216 cpu clock= 2.74E-01
+ tran: time= 8.8435E-08 tot_iter=     537 conv_iter=     239 cpu clock= 2.76E-01
+ tran: time= 9.9975E-08 tot_iter=     545 conv_iter=     243 cpu clock= 2.79E-01
+ tran: time= 1.1000E-07 tot_iter=     583 conv_iter=     262 cpu clock= 2.80E-01
+ sweep: tran tran2    end, cpu clock= 2.80E-01 peak memory=     400 mb
+ parameter: c_bl            =    1.00E-13
+ output: DRAM_7nm.mt0
+ sweep: tran tran3    begin, stop_t=  1.10E-07 #sweeps=1101 cpu clock= 2.82E-01
+ tran: time= 1.1975E-08 tot_iter=      48 conv_iter=      24 cpu clock= 2.83E-01
+ tran: time= 2.2308E-08 tot_iter=     136 conv_iter=      63 cpu clock= 2.86E-01
+ tran: time= 3.3349E-08 tot_iter=     154 conv_iter=      70 cpu clock= 2.89E-01
+ tran: time= 4.4771E-08 tot_iter=     247 conv_iter=     110 cpu clock= 2.94E-01
+ tran: time= 5.5000E-08 tot_iter=     305 conv_iter=     136 cpu clock= 2.96E-01
+ tran: time= 6.7651E-08 tot_iter=     401 conv_iter=     177 cpu clock= 3.04E-01
+ tran: time= 7.7007E-08 tot_iter=     484 conv_iter=     216 cpu clock= 3.09E-01
+ tran: time= 8.8622E-08 tot_iter=     536 conv_iter=     239 cpu clock= 3.12E-01
+ tran: time= 9.9975E-08 tot_iter=     547 conv_iter=     244 cpu clock= 3.14E-01
+ tran: time= 1.1000E-07 tot_iter=     585 conv_iter=     263 cpu clock= 3.18E-01
+ sweep: tran tran3    end, cpu clock= 3.18E-01 peak memory=     400 mb
+ parameter: c_bl            =    1.20E-13
+ output: DRAM_7nm.mt0
+ sweep: tran tran4    begin, stop_t=  1.10E-07 #sweeps=1101 cpu clock= 3.24E-01
+ tran: time= 1.1975E-08 tot_iter=      48 conv_iter=      24 cpu clock= 3.25E-01
+ tran: time= 2.2128E-08 tot_iter=     133 conv_iter=      61 cpu clock= 3.30E-01
+ tran: time= 3.4975E-08 tot_iter=     153 conv_iter=      69 cpu clock= 3.35E-01
+ tran: time= 4.5149E-08 tot_iter=     242 conv_iter=     107 cpu clock= 3.40E-01
+ tran: time= 5.5000E-08 tot_iter=     302 conv_iter=     133 cpu clock= 3.42E-01
+ tran: time= 6.7973E-08 tot_iter=     397 conv_iter=     174 cpu clock= 3.51E-01
+ tran: time= 7.8145E-08 tot_iter=     481 conv_iter=     214 cpu clock= 3.53E-01
+ tran: time= 8.9246E-08 tot_iter=     530 conv_iter=     236 cpu clock= 3.54E-01
+ tran: time= 9.9036E-08 tot_iter=     539 conv_iter=     240 cpu clock= 3.57E-01
+ tran: time= 1.1000E-07 tot_iter=     579 conv_iter=     260 cpu clock= 3.58E-01
+ sweep: tran tran4    end, cpu clock= 3.58E-01 peak memory=     400 mb
+ sweep: parameter       parameter       1 end
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

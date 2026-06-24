@@ -1,0 +1,367 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 3.10.0-1160.88.1.el7.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/3.28.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-ZHMaal"
+      binary: "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-ZHMaal"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-ZHMaal'
+        
+        Run Build Command(s): /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7f97e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7f97e.dir/build.make CMakeFiles/cmTC_7f97e.dir/build
+        gmake[1]: Entering directory `/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-ZHMaal'
+        Building CXX object CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o
+        /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/bin/g++   -v -o CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o -c /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/bin/g++
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --prefix=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0 --enable-languages=c,c++ --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7f97e.dir/'
+         /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1plus -quiet -v -D_GNU_SOURCE /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_7f97e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccQmADTv.s
+        GNU C++17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0
+         /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/x86_64-pc-linux-gnu
+         /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/backward
+         /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include
+         /usr/local/include
+         /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/include
+         /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: f41fdd309b790ee1967089f799fe9a62
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7f97e.dir/'
+         as -v --64 -o CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccQmADTv.s
+        GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1
+        COMPILER_PATH=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_7f97e
+        /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f97e.dir/link.txt --verbose=1
+        /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/bin/g++  -v CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7f97e 
+        Using built-in specs.
+        COLLECT_GCC=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/bin/g++
+        COLLECT_LTO_WRAPPER=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --prefix=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0 --enable-languages=c,c++ --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COMPILER_PATH=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7f97e' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7f97e.'
+         /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cccXtxsC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7f97e /lib/../lib64/crt1.o /lib/../lib64/crti.o /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7f97e' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7f97e.'
+        gmake[1]: Leaving directory `/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-ZHMaal'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0]
+          add: [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/x86_64-pc-linux-gnu]
+          add: [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/backward]
+          add: [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+          add: [/usr/local/include]
+          add: [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/include]
+          add: [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0] ==> [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/include/c++/13.2.0]
+        collapse include dir [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/x86_64-pc-linux-gnu] ==> [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/include/c++/13.2.0/x86_64-pc-linux-gnu]
+        collapse include dir [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/backward] ==> [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/include/c++/13.2.0/backward]
+        collapse include dir [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include] ==> [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/include] ==> [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/include]
+        collapse include dir [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed] ==> [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/include/c++/13.2.0;/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/include/c++/13.2.0/x86_64-pc-linux-gnu;/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/include/c++/13.2.0/backward;/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include;/usr/local/include;/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/include;/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-ZHMaal']
+        ignore line: []
+        ignore line: [Run Build Command(s): /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7f97e/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_7f97e.dir/build.make CMakeFiles/cmTC_7f97e.dir/build]
+        ignore line: [gmake[1]: Entering directory `/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-ZHMaal']
+        ignore line: [Building CXX object CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/bin/g++   -v -o CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o -c /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/bin/g++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0 --enable-languages=c c++ --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7f97e.dir/']
+        ignore line: [ /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1plus -quiet -v -D_GNU_SOURCE /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_7f97e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccQmADTv.s]
+        ignore line: [GNU C++17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0]
+        ignore line: [ /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/x86_64-pc-linux-gnu]
+        ignore line: [ /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/backward]
+        ignore line: [ /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/include]
+        ignore line: [ /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: f41fdd309b790ee1967089f799fe9a62]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7f97e.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccQmADTv.s]
+        ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1]
+        ignore line: [COMPILER_PATH=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_7f97e]
+        ignore line: [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f97e.dir/link.txt --verbose=1]
+        ignore line: [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/bin/g++  -v CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7f97e ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0 --enable-languages=c c++ --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7f97e' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7f97e.']
+        link line: [ /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cccXtxsC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7f97e /lib/../lib64/crt1.o /lib/../lib64/crti.o /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o]
+          arg [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cccXtxsC.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_7f97e] ==> ignore
+          arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o] ==> obj [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o]
+          arg [-L/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0] ==> dir [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0]
+          arg [-L/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64] ==> dir [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..] ==> dir [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..]
+          arg [CMakeFiles/cmTC_7f97e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o] ==> obj [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0] ==> [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0]
+        collapse library dir [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64] ==> [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..] ==> [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib64/crt1.o;/lib64/crti.o;/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o;/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o;/lib64/crtn.o]
+        implicit dirs: [/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0;/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib64;/lib64;/usr/lib64;/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "ext/spdlog/CMakeLists.txt:142 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-SDfD4C"
+      binary: "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-SDfD4C"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-SDfD4C'
+        
+        Run Build Command(s): /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5d239/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5d239.dir/build.make CMakeFiles/cmTC_5d239.dir/build
+        gmake[1]: Entering directory `/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-SDfD4C'
+        Building CXX object CMakeFiles/cmTC_5d239.dir/src.cxx.o
+        /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD  -fPIE -o CMakeFiles/cmTC_5d239.dir/src.cxx.o -c /RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-SDfD4C/src.cxx
+        Linking CXX executable cmTC_5d239
+        /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d239.dir/link.txt --verbose=1
+        /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/bin/g++ CMakeFiles/cmTC_5d239.dir/src.cxx.o -o cmTC_5d239 
+        CMakeFiles/cmTC_5d239.dir/src.cxx.o: In function `main':
+        src.cxx:(.text+0x2f): undefined reference to `pthread_create'
+        src.cxx:(.text+0x3b): undefined reference to `pthread_detach'
+        src.cxx:(.text+0x47): undefined reference to `pthread_cancel'
+        src.cxx:(.text+0x58): undefined reference to `pthread_join'
+        src.cxx:(.text+0x6c): undefined reference to `pthread_atfork'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [cmTC_5d239] Error 1
+        gmake[1]: Leaving directory `/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-SDfD4C'
+        gmake: *** [cmTC_5d239/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "ext/spdlog/CMakeLists.txt:142 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-nybrXV"
+      binary: "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-nybrXV"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-nybrXV'
+        
+        Run Build Command(s): /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_08287/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_08287.dir/build.make CMakeFiles/cmTC_08287.dir/build
+        gmake[1]: Entering directory `/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-nybrXV'
+        Building CXX object CMakeFiles/cmTC_08287.dir/CheckFunctionExists.cxx.o
+        /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/bin/g++   -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++20 -fPIE -o CMakeFiles/cmTC_08287.dir/CheckFunctionExists.cxx.o -c /RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-nybrXV/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_08287
+        /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08287.dir/link.txt --verbose=1
+        /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/bin/g++  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_08287.dir/CheckFunctionExists.cxx.o -o cmTC_08287  -lpthreads 
+        /usr/bin/ld: cannot find -lpthreads
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [cmTC_08287] Error 1
+        gmake[1]: Leaving directory `/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-nybrXV'
+        gmake: *** [cmTC_08287/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "ext/spdlog/CMakeLists.txt:142 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-SuxeGf"
+      binary: "/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-SuxeGf"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-SuxeGf'
+        
+        Run Build Command(s): /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6e17c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6e17c.dir/build.make CMakeFiles/cmTC_6e17c.dir/build
+        gmake[1]: Entering directory `/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-SuxeGf'
+        Building CXX object CMakeFiles/cmTC_6e17c.dir/CheckFunctionExists.cxx.o
+        /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/bin/g++   -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++20 -fPIE -o CMakeFiles/cmTC_6e17c.dir/CheckFunctionExists.cxx.o -c /RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-SuxeGf/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_6e17c
+        /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e17c.dir/link.txt --verbose=1
+        /RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/gcc-13.2.0/bin/g++  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_6e17c.dir/CheckFunctionExists.cxx.o -o cmTC_6e17c  -lpthread 
+        gmake[1]: Leaving directory `/RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/ramulator2/build/CMakeFiles/CMakeScratch/TryCompile-SuxeGf'
+        
+      exitCode: 0
+...

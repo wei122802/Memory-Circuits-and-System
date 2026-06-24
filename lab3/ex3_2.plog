@@ -1,0 +1,27 @@
+****** HSPICE ******  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.
+
+This software and the associated documentation are proprietary
+to Synopsys, Inc. This software may only be used in accordance
+with the terms and conditions of a written license agreement with
+Synopsys, Inc. All other use, reproduction, or distribution of
+this software is strictly prohibited.
+
+Build time: Sun Nov 01 23:43:46 2020, Application start time: Sun May 03 02:09:45 2026
+Hostname: ee24, Username: es26mcs068, PID: 79900
+Working_Directory : /RAID2/COURSE/2026_Spring/es26mcs/es26mcs068/lab3
+Command_Line_Options : ex3_2.info0.json
+
+This file format and content are subject to change.
+================================================================
+
+Running : Sigma Amplification
+Program finished successfully.
+
+
+Ended at Sun May 03 02:09:50 2026
+
+Peak Memory Usage (MB):
+Resident Set Size = 119
+Virtual Memory Size = 719
+
+Total elapsed time: 4.6 seconds (exit code=0)

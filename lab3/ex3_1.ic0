@@ -1,0 +1,27 @@
+* "simulator" "HSPICE" 
+* "version" "Q-2020.03-SP2-2 linux64"
+* "format" "HSP"
+* "rundate" "14:51:52 05/07/2026 "
+* "netlist" "ex3_1.sp "
+* "runtitle" ".title sram and sense amplifier simulation"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ bl = 262.6955n       
++ blb = 262.6955n       
++ pre =   0.            
++ q =  43.7759f       
++ qb = 700.0000m       
++ sa_en =   0.            
++ saen =   0.            
++ sense = 700.0000m       
++ sense_b = 700.0000m       
++ tail = 678.3108m       
++ vdd = 700.0000m       
++ wl =   0.            
++ x = 676.9663m       
++ x_sram.x = 656.4214m       
+***   END: Saved Operating Point ***                     

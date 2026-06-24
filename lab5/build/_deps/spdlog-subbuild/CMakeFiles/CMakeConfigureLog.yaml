@@ -1,0 +1,11 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/RAID2/COURSE/2026_Spring/es26mcs/es26mcsTA05/share/local_tools/cmake-3.28.1/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      The system is: Linux - 3.10.0-1160.88.1.el7.x86_64 - x86_64
+...
