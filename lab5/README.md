@@ -1,60 +1,37 @@
-## Run the project
-1. chmod +x 00_setup.tcl, ./00_setup.tcl
-2. Create a "build" folder under ramulator2 directory
-3. cd build
-4. cmake ..
-5. make -j8
-6. cd scripts
-7. python3 latency_verification_pattern.py, this generates the LD ST traces
-8. cd ../build
-9. ./ramulator2 -f ../Trace_Verification_RTL_C++/testing_latency_verification_all_row_buffer_conflicts.yaml
+# Memory Circuits & Systems Lab 5: Ramulator 2.0 DRAM Controller Simulator
 
-## Recreation Thesis Data
-### Note Ramulator2 limits
-- Ramulator2 cannot feed in too many trace all at once, so the limit to each trace I use in each .yaml file is set to 193881265, however, the PNM worklod I used compute 3 sequences, thus it has more than 500000000 traces, as a result you have to seperate it using different yaml file and record the architectural state after each run
-- After building the ramulator2,do the following
-1. Under ramulator2 folder cd ../
-2. python3 llm_trace_generator.py (Use trace_analyzer.py to analyze the access behaviour of the trace)
-3. cd ramulator2/scripts
-4. cp run_stat.py ../build
-5. cd ../build
-6. python3 run_stat.py ../WUPR_analysis (This runs all the .yaml file under WUPR_analysis_Folder)
-7. Then the execution .log will be created under build. Since it compose of part0,1,2 the average bandwidth,simulation cycles and energy has to be added up
-8. mv *.log ../traces_log
-9. cd ../scripts/
-10. python3 trace_data_extraction.py (For simluation cycles, energy, bandwidth)
-11. python3 command_extraction.py (For commands, the generated command of the bank controller is recorded in the cmd_records folder,note it only record a single channel only, for my configuration it is 4 channels)
-12. .jsons will be created recording the data for analysis
+## 1. Specification Overview
+本實驗探討系統層級的 DRAM 操作效能，使用 **Ramulator 2.0** (一個 Cycle-level 的 DRAM Controller Simulator) 進行模擬與分析。
+實驗重點分為兩大項：
+- **Address Mapping (位址映射)**：探討不同的實體位址到 Channel/Rank/Bank/Row/Col 的映射方式如何影響記憶體頻寬。
+- **Row Policy (列緩衝區替換策略)**：比較 Open-row policy 與 Close-row policy 在不同記憶體存取特徵 (Sequential vs. Random traces) 下的 Row Hit/Conflict 機率與頻寬表現。
 
-## How to start?
-- [Ramulator2](https://github.com/CMU-SAFARI/ramulator2) is the successor of [Ramulator](https://github.com/CMU-SAFARI/ramulator), for in-depth understanding of how the whole system works, understanding Ramulator2 & Ramulator is key!
-- Further documentations and sequence diagrams can be found in the Ramulator2 github website and their papers.
-- [Ramulator2 Paper](https://arxiv.org/abs/2308.11030), [Ramulator Paper](https://users.ece.cmu.edu/~omutlu/pub/ramulator_dram_simulator-ieee-cal15.pdf)
-- Use the gdb or udb debugger to trace through the hierarchy of the whole complex system, starting from main()
-- Within each major block, tick() function is the core function for tracing, it governs how a certain object behaves within each clock cycles.
-- Print statement and modify the yaml file or Ramulator2 Constructer to better understand it
-- To enable debugger option on vscode, remember to download the needed extension for commonly used debugger like gdb or udb then modify the directory in .vscode launch json file.
+系統硬體參數設定：
+- 架構：4 Channels, 1 Bank per Channel, 65536 Rows per Bank, 16 Columns per Row。
+- 觀察 Timing Constraints：$t_{RCD}$ (ACT to READ/WRITE), $t_{RP}$ (PRE to ACT), $t_{CL}$, $t_{RAS}$, $t_{RC}$ 等對連續指令發布的延遲影響。
 
-## Ramualator2 Lab & Notes
-- Finish this [Lab 5: Memory Request Scheduling](https://safari.ethz.ch/architecture/fall2024/doku.php?id=labs) to gain insight about how Ramulator2 works and understand how Scheduling Policy influence the whole DRAM Memory System
-- ![alt text](image.png)
-- Notes of [Lab3](https://www.notion.so/Lab3-Ramulator2-Notes-10d7a87918dd8028a0e7d706ae32cc72)
+## 2. Address Mapping 實驗與分析
 
-## Bank Level Controller & DRAM Bank
-- Simple bank level controller with unified model is created in C++ as a cycle accurate model for the project.
-- The DRAM Bank is modified using the DDR4 timing constraint and interfaces provided within the Ramulator2, the timing Constraints are obtained from [CACTI-3DD](https://ieeexplore.ieee.org/document/6176428),within the whole folder structure as cacti, using the Architectural 3D-DRAM simulator modeling TSV, DRAM Banks and DRAM Organisaztion Developed by HP lab.
-- Refresh Period refered to Micron HBM datasheets.
+### 2.1 預設映射分析 (Given Address Mapping)
+使用預設的 Address Mapping，分別執行 `sequential` (循序存取) 與 `random` (隨機存取) trace。
+- **Sequential Trace**：對於連續的記憶體位址，若預設的映射將其對應到同一個 Row，會觸發大量的 Row Hit，使得指令序列呈現 `ACT -> READ -> READ -> ...`，僅需等待 $t_{CL}$ (Data Available Delay)。
+- **Random Trace**：位址隨機跳躍，容易跳出當下開啟的 Row，導致嚴重的 Row Conflict。此時指令序列為 `PRE -> ACT -> READ`，且每一個指令間均受限於 $t_{RP}$ 與 $t_{RCD}$ 等延遲，大幅降低有效頻寬。
 
-## Global Controller
-- Global Controller is modeled with read-order queue to ensure the correct ordering of the returned data to prevent Out of order issues. Thus a reorder queue is implemented to check for the correct ordering of the returned requests.
+### 2.2 效能優化 (Design New Address Mapping)
+為提升效能，修改了 `src/addr_mapper/impl/linear_mappers.cpp` 中的位址映射邏輯：
+- **交錯存取 (Interleaving)**：改變 Ch/Ra/Ba/Row/Col 的解碼順序。將較低位元的位址映射至 Channel 或 Bank (例如：Row:Bank:Col:Channel)，使得連續的物理位址存取被分散到不同的 Channel 或 Bank 中。
+- **優化結果**：透過這種 Channel/Bank-level parallelism，當一個 Bank 處於 `PRE` 或 `ACT` 的延遲狀態時，另一個 Bank 已經可以接收 `READ`/`WRITE` 指令，有效隱藏了 Timing constraints 帶來的 stall cycles，進而大幅提升有效頻寬。
 
-## Power Model
-- Power model is derived from CACTI-3DD, the energy requires for each RD,WR,ACT,PRE,REF for each commands. Idle currents & voltages are taken from [VAMPIRE](https://github.com/CMU-SAFARI/VAMPIRE) and [DRAMPower](https://github.com/tukl-msd/DRAMPower)
-- To understand how the power model works, please refer to the papers of [VAMPIRE_Paper](https://arxiv.org/abs/1807.05102)
+## 3. Row Policy 實驗與分析
 
-## References
-1. [Ramulator2](https://github.com/CMU-SAFARI/ramulator2)
-2. [Ramulator](https://github.com/CMU-SAFARI/ramulator)
-3. [HBM2E](https://drive.google.com/drive/folders/1k_jKBhyTMttBIWIhl4fNyPm7kPUExr4s)
-4. [VAMPIRE](https://github.com/CMU-SAFARI/VAMPIRE)
-5. [DRAMPower](https://github.com/tukl-msd/DRAMPower)
+Row-buffer 扮演了 DRAM 中微小的 Cache 角色，Bank 一次只能開啟一個 Row。
+
+### 3.1 Open-row Policy
+- **機制**：在存取完畢後，不主動發出 `PRE` (Precharge) 指令，而是保持 Row 開啟。
+- **適用場景**：對於 **Sequential Trace** 或具有高度空間局部性 (Spatial Locality) 的工作負載，這能極大化 Row Hit Rate，省略後續存取的 $t_{RCD}$ 與 $t_{RP}$ 時間。
+- **缺點**：當面臨 Random Trace 時，極容易發生 Row Conflict，此時不但要承受關閉錯誤 Row ($t_{RP}$) 與開啟新 Row ($t_{RCD}$) 的懲罰，還因為先前沒有提早關閉，導致延遲更加惡化。
+
+### 3.2 Close-row Policy
+- **機制**：當同一個 Row 的存取次數達到設定上限 (Cap) 或一段時間無存取後，主動發送 `PRE` 指令將其關閉。
+- **適用場景**：非常適合 **Random Trace** 或是高度多核心競爭記憶體的場景 (Locality 低)。由於每次存取後就立刻 Precharge，下一次存取雖然仍需經過 `ACT` ($t_{RCD}$)，但省去了遭遇 Row Conflict 時等待 `PRE` ($t_{RP}$) 的時間。
+- **實驗對比**：在 `src/dram_controller/impl/rowpolicy/basic_rowpolicies.cpp` 中配置 Cap 值。模擬結果顯示，對於 Sequential Trace，Open-row 的頻寬表現遠勝 Close-row；而對於 Random Trace，Close-row 藉由提早預充電的機制，能有效減少 Row Conflict 帶來的劇烈效能衰退，表現優於 Open-row。
